@@ -17,7 +17,8 @@
     <body>
         <div class="full blue fixed navigation">
             <div class="container relative">
-                <nav>
+                <!-- Navigation on Full Size Browser -> Media 980 -->
+                <nav class="fullNav">
                     <img src="img/icon.png" alt="logo">
                     <ul class="drop">
                         <li>Departments<i class="fa fa-sort-down downArrow"></i></li>
@@ -30,10 +31,21 @@
                 </nav>
                 <div class="clearFix"></div>
                     
-                <div class="search">
+                <div class="search fullNav">
                     <input type="text" placeholder="Type here to search">
                     <input type="submit" value=" "><i class="fa fa-search searchIcon"></i>
                 </div>
+
+                <!-- Navigation for Small Screen Browsers -> 980 and smaller -->
+                <nav class="smallNav">
+                    <img src="img/icon.png" alt="logo">
+                    <ul class="click">
+                        <li><i class="fa fa-search"></i>
+                        <li onclick="navigation()"><i class="fa fa-bars"></i></li>
+                            
+                    </ul>
+                </nav>
+
             </div>
         </div>
 

@@ -146,6 +146,12 @@ textarea {
         display: block;
     } 
 
+    /* Inputs */
+    *:focus {
+      outline: none;
+
+    }
+
 
 /* ==========================================================================
             Navigation
@@ -175,7 +181,7 @@ nav ul.drop {
 .search {
   position: absolute;
   top: 20px;
-  right: 250px;
+  right: 260px;
   width: 45%;
   text-align: right;
 }
@@ -218,6 +224,7 @@ nav ul li {
   display: inline-block;
   color: #fff;
   padding: 0 20px;
+  transition: .4s ease-in-out;
 }
 
 
@@ -227,9 +234,22 @@ nav ul li a {
   transition: .4s ease-in-out;
 }
 
+nav ul li:hover {
+  color: #65AE74;
+}
+
 nav ul li a:hover {
   color: #65AE74;
 }
+
+      /* Touchscreen */
+      .smallNav {
+        display: none;
+      }
+
+      .smallNav i {
+        font-size: 1.5em;
+      }
 
 
 
@@ -491,7 +511,13 @@ nav ul li a:hover {
             Media - 980
    ========================================================================== */
 @media screen and (max-width: 980px) {
-  
+  .fullNav {
+    display: none;
+  }
+
+  .smallNav {
+    display: block;
+  }
 
 
 }
