@@ -14,14 +14,16 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
+
+
     <body>
         <div class="full blue fixed navigation">
-            <div class="container relative">
+            <div class="relative">
                 <!-- Navigation on Full Size Browser -> Media 980 -->
-                <nav class="fullNav">
-                    <img src="img/icon.png" alt="logo">
+                <img src="img/logo.png" alt="logo">
+                <nav class="fullNav clearFix">
                     <ul class="drop">
-                        <li>Departments<i class="fa fa-sort-down downArrow"></i></li>
+                        <li>Departments<i class="fa fa-sort-down downArrow"></i><i class="fa fa-sort-up upArrow"></i></li>
                     </ul>
 
                     <ul>
@@ -29,22 +31,52 @@
                         <li><a href="#">Account<i class="fa fa-user-circle"></i></a></li>
                     </ul>
                 </nav>
-                <div class="clearFix"></div>
                     
-                <div class="search fullNav">
-                    <input type="text" placeholder="Type here to search">
-                    <input type="submit" value=" "><i class="fa fa-search searchIcon"></i>
+                <div class="search clearFix">
+                    <div class="relative">
+                        <input type="text" placeholder="Type here to search">
+                        <h3><i class="fa fa-search searchIcon"></i></h3>
+                    </div>
                 </div>
 
+                <!-- Departments Dropdown Menu -->
+                <div class="dropdown">
+
+                </div>
+
+
                 <!-- Navigation for Small Screen Browsers -> 980 and smaller -->
-                <nav class="smallNav">
-                    <img src="img/icon.png" alt="logo">
-                    <ul class="click">
-                        <li><i class="fa fa-search"></i>
-                        <li onclick="navigation()"><i class="fa fa-bars"></i></li>
-                            
-                    </ul>
-                </nav>
+                <div class="hamNav">
+                    <div class="smallSearch">
+                        <h1><i class="fa fa-search smallSearch"></i></h1>
+                    </div>
+
+                    <div class="hamburger" onclick="openMenu()">
+                        <h1><i class="fa fa-bars"></i></h1>
+                    </div>
+
+                    <div class="hamClose" onclick="closeMenu()">
+                        <h1><i class="fa fa-times"></i></h1>
+                    </div>
+
+                    <!-- Small Screen Menu -->
+                    <div class="hamMenu">
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <hr>
+                            <li><a href="#">Men's</a></li>
+                            <li><a href="#">Women's</a></li>
+                            <li><a href="#">Kid's</a></li>
+                            <li><a href="#">Seasonal</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+
+
+
 
             </div>
         </div>
