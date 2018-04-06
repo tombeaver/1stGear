@@ -1,0 +1,481 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Project 3 - 1st Gear</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+
+    <body>
+        <!-- Navigation -->
+        <div class="full blue navigation">
+            <div class="relative">
+                <!-- Navigation on Full Size Browser -> Media 980 -->
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <nav class="fullNav clearFix">
+                    <ul class="drop">
+                        <li>Departments<i class="fa fa-sort-down downArrow"></i><i class="fa fa-sort-up upArrow"></i></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Cart<i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="#">Account<i class="fa fa-user-circle"></i></a></li>
+                    </ul>
+                </nav>
+                    
+                <div class="search clearFix">
+                    <div class="relative">
+                        <input type="text" placeholder="Type here to search">
+                        <a href="#"><i class="fa fa-search searchIcon"></i></a>
+                    </div>
+                </div>
+
+                <!-- Departments Dropdown Menu -->
+                <div class="dropdown">
+
+                </div>
+
+
+                <!-- Navigation for Small Screen Browsers -> 980 and smaller -->
+                <div class="hamNav">
+                    <div class="smallSearch">
+                        <h1><i class="fa fa-search smallSearch"></i></h1>
+                    </div>
+
+                    <div class="hamburger" onclick="openMenu()">
+                        <h1><i class="fa fa-bars"></i></h1>
+                    </div>
+
+                    <div class="hamClose" onclick="closeMenu()">
+                        <h1><i class="fa fa-times"></i></h1>
+                    </div>
+
+                    <!-- Filter Screen -->
+                    <div class="filterScreen fixed">
+                        <div id="accordion">
+                            <h3>Shoes</h3>
+                            <div>
+                                <ul>
+                                    <li>Lifestyle</li>
+                                    <li>Training</li>
+                                    <li>Running</li>
+                                    <li>Casual</li>
+                                    <li>Hiking</li>
+                                </ul>
+                            </div>
+
+                            <h3>T-Shirts</h3>
+                            <div>
+                                <ul>
+                                    <li>Compression</li>
+                                    <li>Jerseys</li>
+                                    <li>Long Sleeves</li>
+                                    <li>Sleeveless &amp; Tanks</li>
+                                    <li>Polos</li>
+                                    <li>Graphic</li>
+                                </ul>
+                            </div>
+
+                            <h3>Hoodies</h3>
+                            <div>
+                                <ul>
+                                    <li>Hoodies</li>
+                                    <li>Pullovers</li>
+                                    <li>Sweatshirts</li>
+                                    <li>Jackets</li>
+                                </ul>
+                            </div>
+                            
+                            <h3>Pants</h3>
+                            <div>
+                                <ul>
+                                    <li>Pants</li>
+                                    <li>Compression</li>
+                                    <li>Sweatpants</li>
+                                    <li>Leggings</li>
+                                </ul>
+                            </div>
+
+                            <h3>Sweats</h3>
+                            <div>
+                                <ul>
+                                    <li>Sweatshirts</li>
+                                    <li>Sweatpants</li>
+                                </ul>
+                            </div>
+
+                            <h3>Headgear</h3>
+                            <div>
+                                <ul>
+                                    <li>Beanies</li>
+                                    <li>Earmuffs</li>
+                                    <li>Headbands</li>
+                                </ul>
+                            </div>
+
+                            <h3>Socks</h3>
+                            <div>
+                                <ul>
+                                    <li>Compression</li>
+                                    <li>Thermal</li>
+                                    <li>Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Screen Menu -->
+                    <div class="hamMenu">
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <hr>
+                            <li><a href="#">Men's</a></li>
+                            <li><a href="#">Women's</a></li>
+                            <li><a href="#">Kid's</a></li>
+                            <li><a href="#">Seasonal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blue space"></div>
+
+        <!-- top -->
+        <div class="miniSort fixed">
+            <ul class="bread">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Mens</a></li>
+                <li><a href="#">Apparel</a></li>
+            </ul>
+        </div>
+
+        <div class="sort fixed">
+            <div class="sortBy">
+                <select>
+                    <option default>Sort by</option>
+                    <option>Newest</option>
+                    <option>Highest Rated</option>
+                    <option>Price +</option>
+                    <option>Price -</option>
+                </select>
+                <p>1234 Results</p>
+            </div>
+        </div>
+
+        <!-- Side Selection and Filter -->
+        <div class="departTitle fixed">
+            <h1>Men's Apparel</h1>
+            <div class="miniFilter">
+                <h2 onclick="filter()"><i class="fa fa-filter"></i></i> <b>Filter</b></h2>
+                <p>1234 Results</p>
+            </div>
+
+            <div class="sideBar fixed">
+                <div id="accordion">
+                    <h3>Shoes</h3>
+                    <div>
+                        <ul>
+                            <li>Lifestyle</li>
+                            <li>Training</li>
+                            <li>Running</li>
+                            <li>Casual</li>
+                            <li>Hiking</li>
+                        </ul>
+                    </div>
+
+                    <h3>T-Shirts</h3>
+                    <div>
+                        <ul>
+                            <li>Compression</li>
+                            <li>Jerseys</li>
+                            <li>Long Sleeves</li>
+                            <li>Sleeveless &amp; Tanks</li>
+                            <li>Polos</li>
+                            <li>Graphic</li>
+                        </ul>
+                    </div>
+
+                    <h3>Hoodies</h3>
+                    <div>
+                        <ul>
+                            <li>Hoodies</li>
+                            <li>Pullovers</li>
+                            <li>Sweatshirts</li>
+                            <li>Jackets</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Pants</h3>
+                    <div>
+                        <ul>
+                            <li>Pants</li>
+                            <li>Compression</li>
+                            <li>Sweatpants</li>
+                            <li>Leggings</li>
+                        </ul>
+                    </div>
+
+                    <h3>Sweats</h3>
+                    <div>
+                        <ul>
+                            <li>Sweatshirts</li>
+                            <li>Sweatpants</li>
+                        </ul>
+                    </div>
+
+                    <h3>Headgear</h3>
+                    <div>
+                        <ul>
+                            <li>Beanies</li>
+                            <li>Earmuffs</li>
+                            <li>Headbands</li>
+                        </ul>
+                    </div>
+
+                    <h3>Socks</h3>
+                    <div>
+                        <ul>
+                            <li>Compression</li>
+                            <li>Thermal</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Results -->
+        <div class="resultsArea">
+            <div class="results clearFix">
+                <h2></h2>
+
+                <div class="item"><a href="#">
+                    <div class="item0 relative sResults">
+                        <div class="info">
+                            <h2>Compression Shirt</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$34.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item1 relative sResults">
+                        <div class="info">
+                            <h2>Men's Jacket</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$49.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item2 relative sResults">
+                        <div class="info">
+                            <h2>Men's Skull Cap</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$19.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item3 relative sResults">
+                        <div class="info">
+                            <h2>Men's Shorts</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$24.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item4 relative sResults">
+                        <div class="info">
+                            <h2>Adidas Men's Shoe</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$79.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item5 relative sResults">
+                        <div class="info">
+                            <h2>Compression Pants</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$39.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item6 relative sResults">
+                        <div class="info">
+                            <h2>Compression Shirt</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$34.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item7 relative sResults">
+                        <div class="info">
+                            <h2>Men's Jacket</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$49.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item8 relative sResults">
+                        <div class="info">
+                            <h2>Men's Skull Cap</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$19.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item9 relative sResults">
+                        <div class="info">
+                            <h2>Men's Shorts</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$24.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item10 relative sResults">
+                        <div class="info">
+                            <h2>Adidas Men's Shoe</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$79.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="item"><a href="#">
+                    <div class="item11 relative sResults">
+                        <div class="info">
+                            <h2>Compression Pants</h2>
+                            <div class="stars">
+                                
+                            </div>
+                            <h3>$39.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="full">
+            <div class="full green sign">
+                <div class="container relative">
+                    <div class="signup relative">
+                        <input type="text" placeholder="Sign up for our Newsletter">
+                        <a href="#">Sign Up</a>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="full blue footerLinks  clearFix">
+                <div class="container">
+                    <div class="col3">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Suppliers</a></li>
+                            <li><a href="#">Recalls</a></li>
+                        </ul>
+                    </div>
+                    <div class="col3">
+                        <ul>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Shipping Rates</a></li>
+                            <li><a href="#">Product Availability</a></li>
+                            <li><a href="#">Promotions &amp; Coupons</a></li>
+                        </ul>
+                    </div>
+                    <div class="col3">
+                        <ul>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Donations &amp; Sponsors</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="full green clearFix">
+                <div class="container">
+                    <div class="left">
+                        <p class="fp">Terms of Use</p>
+                    </div>
+                    <div class="right">
+                        <p class="fp">Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

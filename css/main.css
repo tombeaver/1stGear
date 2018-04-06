@@ -66,11 +66,11 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
+/*fieldset {
     border: 0;
     margin: 0;
     padding: 0;
-}
+}*/
 
 /*
  * Allow only vertical resizing of textareas.
@@ -109,11 +109,12 @@ textarea {
    /* Fonts */
    h1 {font: 700 34px/36px 'Open Sans', sans-serif;}
    h2 {font: 700 28px/30px 'Open Sans', sans-serif;}
-   h3 {font: 22px/24px 'Abel', sans-serif;}
+   h3 {font: 22px/24px 'Open Sans', sans-serif;}
    a {font: 18px/20px 'Abel', sans-serif;}
    p {font: 18px/20px 'Abel', sans-serif;}
    ul {font: 18px/20px 'Abel', sans-serif;}
    ol {font: 18px/20px 'Abel', sans-serif;}
+   fieldset {font: 600 18px/20px 'Open Sans', sans-serif;}
 
    /* Structure */
     * {margin: 0;}
@@ -139,6 +140,15 @@ textarea {
         visibility: hidden;
     }
 
+    /* link */
+    a {
+      text-decoration: none;
+    }
+
+    /* lists */
+    ol, ul {
+      list-style: none;
+    }
    
 
     /* Inputs */
@@ -163,7 +173,7 @@ textarea {
 .navigation img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
   width: 100px;
   z-index: 9999;
 }
@@ -444,10 +454,107 @@ nav ul li a:hover {
             Homepage
    ========================================================================== */
 /* Hero */
-.hero {
-  background: url(../img/hero.jpg) no-repeat top;
-  background-size: cover;
-  height: 60vh;
+
+
+/* Department Section */
+.departmentSection {
+
+}
+
+.wear {
+  height: 200px;
+  width: 25%;
+  float: left;
+  filter: grayscale(60%);
+  transition: all .3s ease-in-out;
+}
+
+.wear:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+/* Recently Viewed and Recommendations */
+.recently, .recommended {
+  padding: 20px 0;
+  transition: .3s ease-in-out;
+}
+
+.recently h2, .recommended h2 {
+  padding-bottom: 20px;
+}
+
+
+.three {
+  background: yellow;
+  height: 200px;
+  width: 30%;
+  float: left;
+  margin: 0 1.5% 80px;
+}
+
+
+
+.info {
+  position: absolute;
+  bottom: -80px;
+  left: 20%;
+}
+
+.info {
+  color: #333E52;
+}
+
+.info h2 {
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.info h3 {
+  font-size: 1em;
+}
+
+.summer {
+  text-align: center;
+}
+
+.summer img {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+
+.summer h1 {
+  color: #333E52;
+  width: 400px;
+  font-size: 3em;
+  display: inline;
+}
+
+.summer fieldset {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 400px;
+  height: 100px;
+  border: 4px solid #333E52;
+}
+
+.summer fieldset legend {
+  color: #333E52;
+  padding: 15px 20px 15px;
+  font-size: 1.2em;
+}
+
+.summer a {
+  width: 100px;
+  position: absolute;
+  top: 220px;
+  left: 240px;
+  color: #333E52;
+  border: 4px solid #333E52;
+  padding: 10px;
+  font-size: 1.5em;
 }
 
 
@@ -455,11 +562,181 @@ nav ul li a:hover {
 /* ==========================================================================
             Search Results Page
    ========================================================================== */
+/* Breadcrumbs */
+.bread {
+  margin-left: 120px;
+  padding-top: 10px;
+}
 
+.bread li {
+  display: inline;
+}
 
+.bread li+li:before {
+  padding: 10px;
+  content: "/\00a0";
+}
 
+.bread a {
+  color: #333E52;
+}
 
+.miniSort {
+  z-index: 9998;
+}
 
+/* Department Title */
+.departTitle {
+  background: #fff;
+  margin: 0 0 10px 50px;
+  padding: 50px 0 20px;
+  z-index: 999;
+}
+
+.miniFilter {
+  display: none;
+}
+
+.miniFilter h2 {
+  float: left;
+  margin: -50px 0 0 20px;
+  font-size: 1.1em;
+}
+
+.miniFilter p {
+  float: right;
+  margin: -45px 20px 0 0;
+  font-size: 1.1em;
+}
+
+/* Sort By */
+.sort {
+  width: 100%;
+  height: 115px;
+  background: #fff;
+  z-index: 999;
+}
+
+.sort p {
+  font-size: 1em;
+  margin-right: 20px;
+  float: left;
+}
+
+.sortBy {
+  float: right;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+.resultsArea {
+  width: 100%;
+  height: 110vh;
+}
+
+      /* Side bar and Accordian */
+      .sideBar {
+        width: 15%;
+      }
+
+      .ui-state-default {
+        background: none;
+        border: none;
+      }
+
+      .ui-state-default:hover span {
+        display: none;
+      }
+
+      .ui-state-focus span{
+        display: none;
+      }
+
+      .ui-state-focus {
+        font-weight: 700;
+      }
+
+      .ui-accordion .ui-accordion-header {
+        margin: 0;
+        padding: 0;
+      }
+
+      .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+        font-weight: 700;
+        border: none;
+      }
+
+      .ui-widget-content {
+        border: none;
+      }
+
+      .ui-icon, .ui-widget-content .ui-icon {
+        background: none;
+        content: "+";
+        float: right;
+      }
+
+      .ui-state-active .ui-icon, .ui-button:active .ui-icon {
+        background: none;
+      }
+
+      .ui-icon-triangle-1-e {
+        background: none;
+      }
+
+      .ui-accordion .ui-accordion-content {
+        padding: 0;
+      }
+
+      #accordion ul {
+        padding: 5px 0 5px 10px;
+      }
+
+      #accordion span {
+        margin-top: 3px;
+      }
+
+/* Results */
+.results {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  width: 75%;
+  height: 80vh;
+  overflow: scroll;
+}
+
+.results hr {
+  display: none;
+}
+
+.sResults {
+  height: 200px;
+  width: 18%;
+  margin: 0 1% 100px;
+  float: left;
+}
+
+/* Filter Screen */
+.filterScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 0;
+  background: #fff;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+.filterScreen h3 {
+  margin-top: 20px;
+}
+
+.filterScreen ul {
+  padding-left: 0;
+}
 /* ==========================================================================
             Single Product Page
    ========================================================================== */
@@ -477,11 +754,105 @@ nav ul li a:hover {
 
 
 /* ==========================================================================
-            Account
+            Divs with Backgrounds
    ========================================================================== */
 
+.hero {
+  background: url(../img/hero.jpg) no-repeat top;
+  background-size: cover;
+  height: 60vh;
+}
 
+.mens {
+  background: url(../img/mensWear.jpg) no-repeat right top;
+  background-size: cover;
+}
 
+.womens {
+  background: url(../img/womensWear.jpg) no-repeat right top;
+  background-size: cover;
+}
+
+.kids {
+  background: url(../img/kidsWear.jpg) no-repeat right top;
+  background-size: cover;
+}
+
+.seasonal {
+  background: url(../img/seasonalWear.jpg) no-repeat right top;
+  background-size: cover;
+}
+
+.item0 {
+  background: url(../img/item/item0.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item1 {
+  background: url(../img/item/item1.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item2 {
+  background: url(../img/item/item2.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item3 {
+  background: url(../img/item/item3.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item4 {
+  background: url(../img/item/item4.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item5 {
+  background: url(../img/item/item5.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item6 {
+  background: url(../img/item/item6.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item7 {
+  background: url(../img/item/item7.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item8 {
+  background: url(../img/item/item8.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item9 {
+  background: url(../img/item/item9.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item10 {
+  background: url(../img/item/item10.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item11 {
+  background: url(../img/item/item11.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.item12 {
+  background: url(../img/item/item12.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.summer {
+  background: url(../img/water.jpg) no-repeat top;
+  background-size: cover;
+  height: 300px;
+}
 
 
 /* ==========================================================================
@@ -677,6 +1048,23 @@ nav ul li a:hover {
     }
 }
 
+/* ==========================================================================
+            Media - 1500
+   ========================================================================== */
+@media screen and (max-width: 1500px) {
+  .sResults {
+    width: 23%;
+  }
+}
+
+/* ==========================================================================
+            Media - 1350
+   ========================================================================== */
+@media screen and (max-width: 1350px) {
+  .sResults {
+    width: 31%;
+  }
+}
 
 /* ==========================================================================
             Media - 1200
@@ -704,7 +1092,75 @@ nav ul li a:hover {
     right: 120px;
   }
 
+  .wear {
+    width: 50%;
+    filter: grayscale(0);
+  }
 
+  .wear:hover {
+    transform: scale(1);
+  }
+
+  .three {
+    width: 45%;
+    margin: 0 auto 80px;
+  }
+
+  .lose {
+    display: none;
+  }
+
+  .sResults {
+    width: 48%;
+  }
+
+
+
+}
+
+/* ==========================================================================
+            Media - 870
+   ========================================================================== */
+@media screen and (max-width: 870px) {
+  .summer img {
+    display: none;
+  }
+
+  .summer fieldset {
+    left: 50%;
+    margin-left: -217px;
+  }
+
+  .summer a {
+    left: 50%;
+    margin-left: -63px;
+  }
+
+  .sort {
+    display: none;
+  }
+
+  .sideBar {
+    display: none;
+  }
+
+  .departTitle {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .results {
+    width: 100%;
+  }
+
+  .sResults {
+    width: 31%;
+  }
+
+  .miniFilter {
+    display: block;
+  }
 
 
 }
@@ -714,7 +1170,9 @@ nav ul li a:hover {
             Media - 760
    ========================================================================== */
 @media screen and (max-width: 760px) {
-  
+  .sResults {
+    width: 48%;
+  }
 
 
 }
@@ -787,15 +1245,93 @@ nav ul li a:hover {
     z-index: 9999;
   }
 
+  .wear {
+    width: 100%;
+  }
 
+  .miniSort {
+    display: none;
+  }
+
+  .departTitle {
+    margin: 0;
+    padding: 50px 0 10px;
+  }
+
+  .departTitle h1 {
+    margin: 0;
+  }
+
+  .departTitle h2 {
+    margin: -35px 0 0 20px;
+  }
+
+  .departTitle b {
+  }
+
+  .departTitle p {
+    display: none;
+  }
+
+  .results {
+    margin-top: -20px;
+  }
+
+
+}
+
+/* ==========================================================================
+            Media - 550
+   ========================================================================== */
+@media screen and (max-width: 550px) {
+  .sResults {
+    width: 100%;
+    border-top: 1px solid #333E52;
+    padding-top: 10px;
+  }
+
+}
+
+/* ==========================================================================
+            Media - 450
+   ========================================================================== */
+@media screen and (max-width: 450px) {
+  .summer fieldset {
+    width: 80%;
+    left: 50%;
+    margin-left: -42%;
+  }
+
+  .summer a {
+    left: 50%;
+    margin-left: -63px;
+  }
+
+  .summer h1 {
+    font-size: 2.5em;
+  }
+
+  .departTitle b {
+    font-size: .6em;
+  }
+
+
+  .departTitle h1 {
+    text-align: right;
+    font-size: 1.8em;
+    margin: 0;
+  }
+  
 }
 
 
 /* ==========================================================================
-            Media - 320
+            Media - 380
    ========================================================================== */
-@media screen and (max-width: 320px) {
-  
+@media screen and (max-width: 380px) {
+  .summer h1 {
+    font-size: 2em;
+  }
 
   
 }
