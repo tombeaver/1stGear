@@ -10,6 +10,14 @@ function closeMenu() {
 	document.querySelector('.hamMenu').style.top = "-60px";
 	document.querySelector(".hamClose").style.display = "none";
 	document.querySelector(".hamburger").style.display = "block";
+	document.querySelector('.filterScreen').style.width = 0;
+	document.querySelector(".hamClose h1").style.color = "#fff";
+}
+
+function filter() {
+	document.querySelector('.filterScreen').style.width = "100%";
+	document.querySelector(".hamClose").style.display = "block";
+	document.querySelector(".hamClose h1").style.color = "#000";
 }
 
 $(function() {
@@ -40,7 +48,7 @@ $(function() {
 			color: "#FFF"
 		});
 		$(".dropdown").css({
-			marginTop: 0
+			marginTop: "75px"
 		});
 
 		$(".upArrow").css({
@@ -50,5 +58,9 @@ $(function() {
 			display: "block"
 		})
 	})
+
+$( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
 
 });
