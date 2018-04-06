@@ -20,6 +20,9 @@ $(function() {
 		$(".dropdown").css({
 			height: "60vh"
 		});
+		$(".dropdown").css({
+			marginTop: "75px"
+		});
 
 		$(".downArrow").css({
 			display: "none"
@@ -35,6 +38,9 @@ $(function() {
 		});
 		$(".drop li").css({
 			color: "#FFF"
+		});
+		$(".dropdown").css({
+			marginTop: 0
 		});
 
 		$(".upArrow").css({
