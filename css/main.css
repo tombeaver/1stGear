@@ -216,6 +216,7 @@ nav ul.drop i {
   position: absolute;
   top: 0;
   right: 0;
+  color: #fff;
   padding-top: 3px;
   display: inline;
   background: #65AE74;
@@ -229,10 +230,6 @@ nav ul.drop i {
 
 .search a:hover {
   color: #333e52;
-}
-
-.searchIcon {
-  color: #fff;
 }
 
 nav ul {
@@ -341,7 +338,6 @@ nav ul li a:hover {
   margin-top: 75px;
   height: 0;
   background: #fff;
-  text-align: center;
   transition: all .5s ease-in-out;
 }
 
@@ -350,6 +346,49 @@ nav ul li a:hover {
   padding-top: 5px;
 }
 
+.leftSide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;;
+  margin-top: 30px;
+  border-right: 1px solid #333E52;
+}
+
+.leftSide ul {
+  padding-left: 160px;
+}
+
+.leftSide ul li {
+  margin: 30px 0;
+}
+
+.leftSide ul li a {
+  font-size: 1.2em;
+}
+
+.rightSide {
+  width: 80%;
+  float: left;
+  margin-left: 340px;
+  padding-right: 20px;
+}
+
+.rightSide ul {
+  float: left;
+  width: 25%;
+  margin-top: 50px;
+  padding-left: 0;
+
+}
+
+.rightSide ul li {
+  padding-bottom: 15px;
+}
+
+.categories {
+  display: none;
+}
 
 
 /* ==========================================================================
@@ -439,14 +478,23 @@ nav ul li a:hover {
 .col3 a {
   text-decoration: none;
   color: #fff;
+  transition: .3s ease-in-out;
+}
+
+.col3 a:hover {
+  color: #65AE74;
 }
 
 .fp {
   font-size: .9em;
   color: #fff;
   padding: 5px;
+  transition: .3s ease-in-out;
 }
 
+.fp:hover {
+  color: #333E52;
+}
 
 
 
@@ -454,17 +502,122 @@ nav ul li a:hover {
             Homepage
    ========================================================================== */
 /* Hero */
+.hero {
+  text-align: center;
+  overflow: hidden;
+}
+
+.height {
+  height: 60vh;
+}
+
+.hero img {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+
+.hero h1 {
+  color: #fff;
+  width: 500px;
+  font-size: 3em;
+  display: inline;
+}
+
+.hero fieldset {
+  position: absolute;
+  top: 50px;
+  left: 33px;
+  width: 500px;
+  height: 100px;
+  border: 4px solid #fff;
+}
+
+.hero fieldset legend {
+  color: #fff;
+  padding: 15px 20px 15px;
+  font-size: 1.2em;
+}
+
+.heroAd a {
+  width: 100px;
+  position: absolute;
+  top: 220px;
+  left: 243px;
+  color: #fff;
+  border: 4px solid #fff;
+  padding: 10px;
+  font-size: 1.5em;
+  transition: .3s ease-in-out;
+}
+
+.hero a:hover {
+  background: #65AE74;
+}
+
+.containAd {
+  width: 100%;
+  position: absolute;
+  left: 600px;
+  margin-top: 100px;
+}
+
+.heroAd {
+  padding-right: 9999px;
+  height: 300px;
+  width: 600px;
+  background: rgba(51, 62, 82, .8);
+  direction: ltr;
+  overflow: hidden;
+}
+
+.miniContain {
+  padding: 10px;
+}
+
+.bottomAd {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: rgba(51, 62, 82, .8);
+}
+
+.bottomAd h2 {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.bottomAd a {
+  width: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -64px;
+  color: #fff;
+  border: 4px solid #fff;
+  padding: 10px;
+  font-size: 1.5em;
+  transition: .3s ease-in-out;
+}
+
+
 
 
 /* Department Section */
-.departmentSection {
 
-}
-
-.wear {
+.wrap {
+  overflow: hidden;
   height: 200px;
   width: 25%;
   float: left;
+}
+
+.wear {
+  width: 100%;
+  height: 100%;
   filter: grayscale(60%);
   transition: all .3s ease-in-out;
 }
@@ -474,31 +627,54 @@ nav ul li a:hover {
   filter: grayscale(0);
 }
 
+.wrap h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px 0 8px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(51, 62, 82, .7));
+  text-shadow: 1px 1px 3px #333E52;
+  font-size: 3.5em;
+  z-index: 999;
+
+}
+
+.wrap h2:hover {
+
+}
+
 /* Recently Viewed and Recommendations */
-.recently, .recommended {
-  padding: 20px 0;
-  transition: .3s ease-in-out;
-}
 
-.recently h2, .recommended h2 {
-  padding-bottom: 20px;
+.re {
+  margin: 30px 0 0;
 }
-
 
 .three {
-  background: yellow;
-  height: 200px;
-  width: 30%;
-  float: left;
-  margin: 0 1.5% 80px;
+  height: 100%;
+  width: 100%;
+  
 }
 
+.items {
+  height: 200px;
+  width: 31%;
+  padding-bottom: 100px;
+  margin: 0 1% 80px;
+  float: left;
+}
 
+.items:hover {
+  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+  padding: -1px -1px 99px -1px;
+}
 
 .info {
   position: absolute;
   bottom: -80px;
-  left: 20%;
+  left: 10%;
 }
 
 .info {
@@ -555,9 +731,19 @@ nav ul li a:hover {
   border: 4px solid #333E52;
   padding: 10px;
   font-size: 1.5em;
+  transition: .3s ease-in-out;
 }
 
+.summer a:hover {
+  background: #333E52;
+  border: 4px solid #fff;
+  color: #fff;
+}
 
+.stars i {
+  color: #65AE74;
+  padding-top: 5px;
+}
 
 /* ==========================================================================
             Search Results Page
@@ -631,12 +817,17 @@ nav ul li a:hover {
 
 .resultsArea {
   width: 100%;
-  height: 110vh;
+  height: 95vh;
+  overflow: hidden;
 }
 
       /* Side bar and Accordian */
       .sideBar {
         width: 15%;
+        float: left;
+        position: absolute;
+        top: 150px;
+        left: 50px;
       }
 
       .ui-state-default {
@@ -646,6 +837,10 @@ nav ul li a:hover {
 
       .ui-state-default:hover span {
         display: none;
+      }
+
+      .ui-state-default:hover {
+        margin: 0;
       }
 
       .ui-state-focus span{
@@ -689,21 +884,28 @@ nav ul li a:hover {
       }
 
       #accordion ul {
-        padding: 5px 0 5px 10px;
+        padding: 5px 0;
       }
 
-      #accordion span {
-        margin-top: 3px;
-      }
+      #accordion2 ul, #accordion3 ul {
+        padding: 5px 0 5px 10px;
+      } 
 
 /* Results */
 .results {
+  width: 100%;
+  height: 100%;
+  padding: 0 22px 0 0;
+  overflow: scroll;
+}
+
+.res {
   position: absolute;
-  top: 200px;
-  right: 20px;
+  top: 120px;
+  left: 280px;
   width: 75%;
   height: 80vh;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .results hr {
@@ -713,37 +915,154 @@ nav ul li a:hover {
 .sResults {
   height: 200px;
   width: 18%;
-  margin: 0 1% 100px;
+  padding-bottom: 100px;
+  margin: 10px 1% 50px;
   float: left;
 }
 
-/* Filter Screen */
-.filterScreen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  height: 100vh;
-  width: 0;
-  background: #fff;
-  text-align: center;
-  transition: all .5s ease-in-out;
+.sResults:hover {
+  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
 }
 
-.filterScreen h3 {
-  margin-top: 20px;
+#accordian3 ul li input {
+  padding-right: 10px;
 }
 
-.filterScreen ul {
-  padding-left: 0;
+        /* Filter Screen */
+        .filterScreen {
+          position: absolute;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          height: 100vh;
+          width: 0;
+          background: #fff;
+          text-align: center;
+          transition: all .5s ease-in-out;
+        }
+
+        .filterScreen h3 {
+          margin-top: 20px;
+        }
+
+        .filterScreen ul {
+          padding-left: 0;
+        }
+
+
+/* Pagination */
+.pagination {
+  text-align: right;
+  margin-right: 20px;
 }
+
+.pagination li {
+  display: inline-block;
+  color: #333E52;
+  padding: 0 2.5px 20px;
+  font-size: 1.1em;
+}
+
+.pagination li a {
+  color: #333E52;
+  font-size: 1.1em;
+  padding: 0 5px;
+}
+
+.pagination li a:hover {
+  background: #333E52;
+  color: #fff;
+}
+
+
 /* ==========================================================================
             Single Product Page
    ========================================================================== */
+.gallery {
+  margin: 100px 5%;
+  width: 45%;
+  float: left;
+}
 
+.largeItem img {
+  width: 80%;
+  margin: 5px 10%;
+}
 
+.textBox {
+  width: 35%;
+  margin: 100px 5%;
+  float: right;
+}
 
+.textBox h2 {
+  padding-bottom: 10px;
+}
 
+.sizeChart {
+  width: 100%;
+}
+
+.box {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.box:hover {
+  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+}
+
+.boxShadow {
+  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+}
+
+.thumbnails {
+  width: 80%;
+  margin: 5px 0;
+}
+
+.thumbnails img {
+  width: 65px;
+  display: inline-block;
+  margin: 1%;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.thumbnails img:hover {
+  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+}
+
+.description h2 {
+  font-size: 1.3em;
+}
+
+.more, .less {
+  display: none;
+  color: #65AE74;
+  cursor: pointer;
+  text-align: right;
+}
+
+.textBox button {
+  color: #fff;
+  background: #65AE74;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  transition: .3s ease-in-out;
+}
+
+.textBox button:hover {
+  color: #333E52;
+}
 
 /* ==========================================================================
             Checkout Page
@@ -758,9 +1077,8 @@ nav ul li a:hover {
    ========================================================================== */
 
 .hero {
-  background: url(../img/hero.jpg) no-repeat top;
+  background: url(../img/hero.jpg) no-repeat left;
   background-size: cover;
-  height: 60vh;
 }
 
 .mens {
@@ -786,72 +1104,91 @@ nav ul li a:hover {
 .item0 {
   background: url(../img/item/item0.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item1 {
   background: url(../img/item/item1.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item2 {
   background: url(../img/item/item2.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item3 {
   background: url(../img/item/item3.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item4 {
   background: url(../img/item/item4.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item5 {
   background: url(../img/item/item5.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item6 {
   background: url(../img/item/item6.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item7 {
   background: url(../img/item/item7.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item8 {
   background: url(../img/item/item8.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item9 {
   background: url(../img/item/item9.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item10 {
   background: url(../img/item/item10.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item11 {
   background: url(../img/item/item11.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .item12 {
   background: url(../img/item/item12.jpg) no-repeat center;
   background-size: contain;
+  height: 200px;
 }
 
 .summer {
   background: url(../img/water.jpg) no-repeat top;
   background-size: cover;
   height: 300px;
+}
+
+.productItem {
+  background: url(../img/item/item0.jpg) no-repeat center;
+  background-size: contain;
+  height: 400px;
 }
 
 
@@ -1064,6 +1401,11 @@ nav ul li a:hover {
   .sResults {
     width: 31%;
   }
+
+  .remove {
+    display: none;
+  }
+
 }
 
 /* ==========================================================================
@@ -1073,6 +1415,29 @@ nav ul li a:hover {
   .container {
     width: 100%;
   }
+
+  .containAd {
+    display: none;
+  }
+
+  .bottomAd {
+    display: block;
+  }
+
+  .more {
+    display: block;
+  }
+
+  .description p {
+    height: 143px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+
+  .rightSide ul {
+    width: 20%;
+  }
+
 }
 
 
@@ -1092,8 +1457,11 @@ nav ul li a:hover {
     right: 120px;
   }
 
-  .wear {
+  .wrap {
     width: 50%;
+  }
+
+  .wear {
     filter: grayscale(0);
   }
 
@@ -1101,9 +1469,8 @@ nav ul li a:hover {
     transform: scale(1);
   }
 
-  .three {
+  .items {
     width: 45%;
-    margin: 0 auto 80px;
   }
 
   .lose {
@@ -1112,6 +1479,10 @@ nav ul li a:hover {
 
   .sResults {
     width: 48%;
+  }
+
+  .remove2 {
+    display: none;
   }
 
 
@@ -1150,8 +1521,9 @@ nav ul li a:hover {
     margin-left: 0;
   }
 
-  .results {
+  .res {
     width: 100%;
+    left: 0;
   }
 
   .sResults {
@@ -1159,6 +1531,10 @@ nav ul li a:hover {
   }
 
   .miniFilter {
+    display: block;
+  }
+
+  .remove {
     display: block;
   }
 
@@ -1170,8 +1546,18 @@ nav ul li a:hover {
             Media - 760
    ========================================================================== */
 @media screen and (max-width: 760px) {
+  .hero {
+    background: url(../img/hero2.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+
   .sResults {
     width: 48%;
+  }
+
+  .remove {
+    display: none;
   }
 
 
@@ -1245,7 +1631,7 @@ nav ul li a:hover {
     z-index: 9999;
   }
 
-  .wear {
+  .wrap {
     width: 100%;
   }
 
@@ -1321,6 +1707,14 @@ nav ul li a:hover {
     font-size: 1.8em;
     margin: 0;
   }
+
+  .bottomAd h1 {
+    font-size: 2.5em;
+  }
+
+  .bottomAd h2 {
+    margin: 10px 0; 
+  }
   
 }
 
@@ -1331,6 +1725,14 @@ nav ul li a:hover {
 @media screen and (max-width: 380px) {
   .summer h1 {
     font-size: 2em;
+  }
+
+  .bottomAd h1 {
+    font-size: 2em;
+  }
+
+  .bottomAd h2 {
+    font-size: 1.5em;
   }
 
   

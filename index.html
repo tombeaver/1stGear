@@ -10,7 +10,7 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -41,7 +41,266 @@
                 </div>
 
                 <!-- Departments Dropdown Menu -->
-                <div class="dropdown">
+                <div class="dropdown relative clearFix">
+                    <div class="leftSide">
+                        <ul class="menu">
+                            <!-- <script>
+                                function reveal(target) {
+                                    $(".rightSide ul").addClass("categories");
+                                    target.stopPropagation();
+                                    $(target).removeClass("categories");
+                                };
+                            </script> -->
+                            <li><a href="#" onmouseover="reveal('#tShirts')" >T-Shirts</a></li>
+                            <li><a href="#" onmouseover="reveal('#hoodies')" >Hoodies</a></li>
+                            <li><a href="#" onmouseover="reveal('#pants')">Pants</a></li>
+                            <li><a href="#" onmouseover="reveal('#sweats')" >Sweats</a></li>
+                            <li><a href="#" onmouseover="reveal('#headgear')" >Headgear</a></li>
+                            <li><a href="#" onmouseover="reveal('#socks')">Socks</a></li>
+                            <li><a href="#" onmouseover="reveal('#shoes')">Shoes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="rightSide">
+                        <div id="tShirts">
+                            <ul class="menList">
+                                <li><h3>Men's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Jerseys</a></li>
+                                <li><a href="#">Long Sleeves</a></li>
+                                <li><a href="#">Sleeveless</a></li>
+                                <li><a href="#">Tanks</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Graphic</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="womenList">
+                                <li><h3>Women's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Sports Bra</a></li>
+                                <li><a href="#">Long Sleeves</a></li>
+                                <li><a href="#">Sleeveless</a></li>
+                                <li><a href="#">Tanks</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="kidsList">
+                                <li><h3>Kid's</h3></li>
+                                <li><a href="#">Jerseys</a></li>
+                                <li><a href="#">Long Sleeves</a></li>
+                                <li><a href="#">Sleeveless</a></li>
+                                <li><a href="#">Tanks</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Graphic</a></li>
+                                <li><a href="#">Casual</a></li>
+                            </ul>
+                            <ul class="seasonalList">
+                                <li><h3>Seasonal</h3></li>
+                                <li><a href="#">Summer</a></li>
+                                <li><a href="#">Autumn</a></li>
+                                <li><a href="#">Winter</a></li>
+                                <li><a href="#">Spring</a></li>
+                                <li><a href="#">Hot</a></li>
+                                <li><a href="#">Cold</a></li>
+                                <li><a href="#">Temperate</a></li>
+                                <li><a href="#">Casual</a></li>
+                            </ul>
+                        </div>
+                        <div id="hoodies" class="categories">
+                            <ul class="menList">
+                                <li><h3>Men's</h3></li>
+                                <li><a href="#">Hoodies</a></li>
+                                <li><a href="#">Pullovers</a></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Zipups</a></li>
+                                <li><a href="#">Quarter Zip</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="womenList">
+                                <li><h3>Women's</h3></li>
+                                <li><a href="#">Hoodies</a></li>
+                                <li><a href="#">Pullovers</a></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Zipups</a></li>
+                                <li><a href="#">Quarter Zip</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="kidsList">
+                                <li><h3>Kid's</h3></li>
+                                <li><a href="#">Hoodies</a></li>
+                                <li><a href="#">Pullovers</a></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Zipups</a></li>
+                                <li><a href="#">Quarter Zip</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="seasonalList">
+                                <li><h3>Seasonal</h3></li>
+                                <li><a href="#">Hoodies</a></li>
+                                <li><a href="#">Pullovers</a></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Zipups</a></li>
+                                <li><a href="#">Quarter Zip</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                        </div>
+                        <div id="pants" class="categories">
+                            <ul class="menList">
+                                <li><h3>Men's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Jogging</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="womenList">
+                                <li><h3>Women's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Jogging</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="kidsList">
+                                <li><h3>Kid's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Jogging</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="seasonalList">
+                                <li><h3>Seasonal</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Jogging</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                                <li><a href="#">Leggings</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                        </div>
+                        <div id="sweats" class="categories">
+                            <ul class="menList">
+                                <li><h3>Men's</h3></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                            </ul>
+                            <ul class="womenList">
+                                <li><h3>Women's</h3></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                            </ul>
+                            <ul class="kidsList">
+                                <li><h3>Kid's</h3></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                            </ul>
+                            <ul class="seasonalList">
+                                <li><h3>Seasonal</h3></li>
+                                <li><a href="#">Sweatshirts</a></li>
+                                <li><a href="#">Sweatpants</a></li>
+                            </ul>
+                        </div>
+                        <div id="headgear" class="categories">
+                            <ul class="menList">
+                                <li><h3>Men's</h3></li>
+                                <li><a href="#">Beanies</a></li>
+                                <li><a href="#">Earmuffs</a></li>
+                                <li><a href="#">Headbands</a></li>
+                                <li><a href="#">Fun</a></li>
+                            </ul>
+                            <ul class="womenList">
+                                <li><h3>Women's</h3></li>
+                                <li><a href="#">Beanies</a></li>
+                                <li><a href="#">Earmuffs</a></li>
+                                <li><a href="#">Headbands</a></li>
+                                <li><a href="#">Fun</a></li>
+                            </ul>
+                            <ul class="kidsList">
+                                <li><h3>Kid's</h3></li>
+                                <li><a href="#">Beanies</a></li>
+                                <li><a href="#">Earmuffs</a></li>
+                                <li><a href="#">Headbands</a></li>
+                                <li><a href="#">Fun</a></li>
+                            </ul>
+                            <ul class="seasonalList">
+                                <li><h3>Seasonal</h3></li>
+                                <li><a href="#">Beanies</a></li>
+                                <li><a href="#">Earmuffs</a></li>
+                                <li><a href="#">Headbands</a></li>
+                                <li><a href="#">Fun</a></li>
+                            </ul>
+                        </div>
+                        <div id="socks" class="categories">
+                            <ul class="menList">
+                                <li><h3>Men's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="womenList">
+                                <li><h3>Women's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="kidsList">
+                                <li><h3>Kid's</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                            <ul class="seasonalList">
+                                <li><h3>Seasonal</h3></li>
+                                <li><a href="#">Compession</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Thermal</a></li>
+                            </ul>
+                        </div>
+                        <div id="shoes" class="categories">
+                            <ul class="menList">
+                                <li><h3>Men's</h3></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Hiking</a></li>
+                                <li><a href="#">Sandals</a></li>
+                            </ul>
+                            <ul class="womenList">
+                                <li><h3>Women's</h3></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Hiking</a></li>
+                                <li><a href="#">Sandals</a></li>
+                            </ul>
+                            <ul class="kidsList">
+                                <li><h3>Kid's</h3></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Hiking</a></li>
+                                <li><a href="#">Sandals</a></li>
+                            </ul>
+                            <ul class="seasonalList">
+                                <li><h3>Seasonal</h3></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Hiking</a></li>
+                                <li><a href="#">Sandals</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -83,54 +342,70 @@
 
         <!-- Hero -->
         <div class="full hero">
-            <div class="container">
-
+            <div class="height container relative">
+                <div class="containAd">
+                    <div class="heroAd">
+                        <fieldset>
+                            <legend>Get Fit</legend>
+                            <h1>Work Out Attire</h1>
+                        </fieldset>
+                        <a href="results.html">Shop Now</a>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="bottomAd">
+                    <div class="miniContain">
+                        <h2>Get Fit</h2>
+                        <h1>Work Out Attire</h1>
+                        <a href="results.html">Shop Now</a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Departments -->
         <div class="full departmentSection clearFix">
-            <a href="#"><div class="mens wear"></div></a>
-            <a href="#"><div class="womens wear"></div></a>
-            <a href="#"><div class="kids wear"></div></a>
-            <a href="#"><div class="seasonal wear"></div></a>
+            <div class="wrap relative"><a href="results.html"><h2>Men's</h2><div class="mens wear"></div></a></div>
+            <div class="wrap relative"><a href="#"><h2>Women's</h2><div class="womens wear"></div></a></div>
+            <div class="wrap relative"><a href="#"><h2>Kid's</h2><div class="kids wear"></div></a></div>
+            <div class="wrap relative"><a href="#"><h2>Seasonal</h2><div class="seasonal wear"></div></a></div>
         </div>
 
         <!-- Recently Viewed -->
-        <div class="full recently clearFix">
+        <div class="full re clearFix">
             <div class="container">
                 <h2>Recently Viewed</h2>
 
-                <div class="item"><a href="#">
+                <div class="items"><a href="product.html">
                     <div class="item0 relative three">
                         <div class="info">
                             <h2>Compression Shirt</h2>
                             <div class="stars">
-                                
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
                             </div>
                             <h3>$34.99</h3>
                         </div>
                     </div>
                 </a></div>
 
-                <div class="item"><a href="#">
+                <div class="items"><a href="#">
                     <div class="item1 relative three">
                         <div class="info">
                             <h2>Men's Jacket</h2>
                             <div class="stars">
-                                
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
                             </div>
                             <h3>$49.99</h3>
                         </div>
                     </div>
                 </a></div>
 
-                <div class="item"><a href="#">
-                    <div class="item2 relative three lose">
+                <div class="items lose"><a href="#">
+                    <div class="item2 relative three">
                         <div class="info">
                             <h2>Men's Skull Cap</h2>
                             <div class="stars">
-                                
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
                             </div>
                             <h3>$19.99</h3>
                         </div>
@@ -140,40 +415,40 @@
         </div>
 
         <!-- Recommendations -->
-        <div class="full recommended clearFix">
+        <div class="full re clearFix">
             <div class="container">
                 <h2>Recommendations</h2>
 
-                <div class="item"><a href="#">
+                <div class="items"><a href="#">
                     <div class="item3 relative three">
                         <div class="info">
                             <h2>Men's Shorts</h2>
                             <div class="stars">
-                                
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
                             </div>
                             <h3>$24.99</h3>
                         </div>
                     </div>
                 </a></div>
 
-                <div class="item"><a href="#">
+                <div class="items"><a href="#">
                     <div class="item4 relative three">
                         <div class="info">
                             <h2>Adidas Men's Shoe</h2>
                             <div class="stars">
-                                
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
                             </div>
                             <h3>$79.99</h3>
                         </div>
                     </div>
                 </a></div>
 
-                <div class="item"><a href="#">
-                    <div class="item5 relative three lose">
+                <div class="items lose"><a href="#">
+                    <div class="item5 relative three">
                         <div class="info">
                             <h2>Compression Pants</h2>
                             <div class="stars">
-                                
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
                             </div>
                             <h3>$39.99</h3>
                         </div>
@@ -250,10 +525,10 @@
             <div class="full green clearFix">
                 <div class="container">
                     <div class="left">
-                        <p class="fp">Terms of Use</p>
+                        <a href="#" class="fp">Terms of Use</a>
                     </div>
                     <div class="right">
-                        <p class="fp">Privacy Policy</p>
+                        <a href="#" class="fp">Privacy Policy</a>
                     </div>
                 </div>
             </div>
@@ -266,6 +541,7 @@
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
