@@ -127,6 +127,7 @@ textarea {
     .textC {text-align: center;}
     .textL {text-align: left;}
 
+
     /* Positioning */
     .fixed {position: fixed;}
     .relative {position: relative;}
@@ -174,7 +175,7 @@ textarea {
   position: absolute;
   top: 0;
   left: 20px;
-  width: 100px;
+  width: 139px;
   z-index: 9999;
 }
 
@@ -185,7 +186,8 @@ nav {
 nav ul.drop {
   position: absolute;
   top: 25px;
-  left: 100px;
+  left: 160px;
+  cursor: pointer;
 }
 
 nav ul.drop i {
@@ -204,8 +206,8 @@ nav ul.drop i {
 .search input[type=text] {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 88%;
+  left: 20%;
+  width: 70%;
   height: 25px;
   padding-left: 2%;
   border: none;
@@ -318,19 +320,80 @@ nav ul li a:hover {
         transition: all .5s ease-in-out;
       }
 
+      .hamMenu a {
+        font-size: 1.5em;
+        margin: 20px;
+        color: #fff;
+        display: block;
+      }
+
+      .acct {
+        margin-top: 50px;
+        border-bottom: 2px solid #65AE74;
+      }
+
+      #accordion5 {
+        color: #fff;
+        background: #333E52;
+      }
+
+      #accordion5 .ui-widget-content {
+        background: #333E52;
+      }
+
+      #accordion5 .ui-state-default {
+        margin: 0;
+        background: none;
+        border: none;
+        color: #fff;
+      }
+
+      #accordion5 .ui-state-default:hover {
+        padding: 0;
+        margin: 0;
+        color: #65AE74;
+      }
+
+      .ui-state-focus span{
+        display: none;
+      }
+
+      .ui-state-focus {
+        font-weight: 700;
+      }
+
+      .ui-accordion .ui-accordion-header {
+        margin: 0;
+        padding: 0;
+      }
+
+      .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+        font-weight: 700;
+        border: none;
+        margin: 0;
+      }
+
       .hamMenu ul {
+        color: #fff;
+        background: #333E52;
         list-style: none;
         padding-left: 0;
+        transition: .3s ease-in-out;
+      }
+
+      .hamMenu li:hover {
+        color: #65AE74;
       }
 
       .hamMenu li {
-        margin: 40px 0;
+        background: #333E52;
+        margin: 30px 0;
       }
 
-      .hamMenu li a {
-        text-decoration: none;
-        color: #fff;
+      .hamMenu h3 {
+        width: 100%;
       }
+
 
 /* Dropdown */
 .dropdown {
@@ -341,6 +404,12 @@ nav ul li a:hover {
   transition: all .5s ease-in-out;
 }
 
+.dropdown a {
+  color: #333E52;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
 .upArrow {
   display: none;
   padding-top: 5px;
@@ -349,14 +418,14 @@ nav ul li a:hover {
 .leftSide {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 300px;;
+  left: 220px;
+  width: 150px;
   margin-top: 30px;
   border-right: 1px solid #333E52;
 }
 
 .leftSide ul {
-  padding-left: 160px;
+  padding-left: 0px;
 }
 
 .leftSide ul li {
@@ -370,7 +439,7 @@ nav ul li a:hover {
 .rightSide {
   width: 80%;
   float: left;
-  margin-left: 340px;
+  margin-left: 405px;
   padding-right: 20px;
 }
 
@@ -615,6 +684,11 @@ nav ul li a:hover {
   float: left;
 }
 
+.wrap:last-child {
+
+  margin-bottom: 80px;
+}
+
 .wear {
   width: 100%;
   height: 100%;
@@ -642,39 +716,39 @@ nav ul li a:hover {
 
 }
 
-.wrap h2:hover {
-
-}
 
 /* Recently Viewed and Recommendations */
 
 .re {
-  margin: 30px 0 0;
+  width: 94%;
+  margin: 0 2% 0;
 }
 
-.three {
+
+.four {
   height: 100%;
   width: 100%;
-  
 }
 
 .items {
   height: 200px;
-  width: 31%;
+  width: 18%;
   padding-bottom: 100px;
-  margin: 0 1% 80px;
+  margin: 0 3% 80px;
   float: left;
 }
 
 .items:hover {
-  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+  box-shadow: .5px .5px 1px 1px rgba(51, 62, 82, .5);
   padding: -1px -1px 99px -1px;
 }
 
 .info {
+  width: 100%;
   position: absolute;
   bottom: -80px;
-  left: 10%;
+  left: 50%;
+  margin-left: -25%; 
 }
 
 .info {
@@ -883,10 +957,6 @@ nav ul li a:hover {
         padding: 0;
       }
 
-      #accordion ul {
-        padding: 5px 0;
-      }
-
       #accordion2 ul, #accordion3 ul {
         padding: 5px 0 5px 10px;
       } 
@@ -921,7 +991,8 @@ nav ul li a:hover {
 }
 
 .sResults:hover {
-  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+  box-shadow: .5px .5px 1px 1px rgba(51, 62, 82, .5);
+  padding: -1px -1px 99px -1px;
 }
 
 #accordian3 ul li input {
@@ -933,12 +1004,20 @@ nav ul li a:hover {
           position: absolute;
           top: 0;
           left: 0;
-          overflow: hidden;
+          overflow: scroll;
           height: 100vh;
           width: 0;
           background: #fff;
-          text-align: center;
           transition: all .5s ease-in-out;
+        }
+
+        .filterScreen h2:first-child {
+          margin-top: 75px;
+        }
+
+        .filterScreen h2 {
+          margin: 25px 0 10px 0;
+
         }
 
         .filterScreen h3 {
@@ -946,7 +1025,11 @@ nav ul li a:hover {
         }
 
         .filterScreen ul {
-          padding-left: 0;
+          padding: 5px 0 10px 20px;
+        }
+
+        .filterScreen ul li {
+          padding: 5px 0;
         }
 
 
@@ -957,8 +1040,8 @@ nav ul li a:hover {
 }
 
 .pagination li {
-  display: inline-block;
   color: #333E52;
+  display: inline-block;
   padding: 0 2.5px 20px;
   font-size: 1.1em;
 }
@@ -974,6 +1057,11 @@ nav ul li a:hover {
   color: #fff;
 }
 
+.pagination li:nth-child(3) a {
+  background: #333E52;
+  color: #fff;
+}
+
 
 /* ==========================================================================
             Single Product Page
@@ -982,6 +1070,10 @@ nav ul li a:hover {
   margin: 100px 5%;
   width: 45%;
   float: left;
+}
+
+.middle {
+  display: none;
 }
 
 .largeItem img {
@@ -1014,20 +1106,22 @@ nav ul li a:hover {
 }
 
 .box:hover {
-  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+  box-shadow: .5px .5px 1px 1px rgba(51, 62, 82, .5);
+  padding: -1px -1px 99px -1px;
 }
 
 .boxShadow {
-  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+  box-shadow: .5px .5px 1px 1px rgba(51, 62, 82, .5);
+  padding: -1px -1px 99px -1px;
 }
 
 .thumbnails {
-  width: 80%;
+  width: 100%;
   margin: 5px 0;
 }
 
 .thumbnails img {
-  width: 65px;
+  width: 22%;
   display: inline-block;
   margin: 1%;
   cursor: pointer;
@@ -1035,7 +1129,8 @@ nav ul li a:hover {
 }
 
 .thumbnails img:hover {
-  box-shadow: 2px 2px 3px 2px rgba(51, 62, 82, .5);
+  box-shadow: .5px .5px 1px 1px rgba(51, 62, 82, .5);
+  padding: -1px -1px 99px -1px;
 }
 
 .description h2 {
@@ -1049,7 +1144,8 @@ nav ul li a:hover {
   text-align: right;
 }
 
-.textBox button {
+.addCart button {
+  display: block;
   color: #fff;
   background: #65AE74;
   border: none;
@@ -1057,20 +1153,184 @@ nav ul li a:hover {
   width: 100%;
   padding: 10px;
   margin: 10px 0 20px;
+  text-align: center;
   transition: .3s ease-in-out;
 }
 
-.textBox button:hover {
+.addCart button:hover {
   color: #333E52;
 }
 
+.similar {
+  display: none;
+  width: 80%;
+  margin: 50px 10%;
+}
+
+
+.largeSim {
+  
+}
+
+.simItems {
+  height: 250px;
+  width: 30%;
+  padding-bottom: 50px;
+  margin: 0 1% 20px;
+  float: left;
+}
+
+.simItems:hover {
+  box-shadow: .5px .5px 1px 1px rgba(51, 62, 82, .5);
+  padding: -1px -1px 99px -1px;
+}
+
+.simInfo {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  margin-left: -25%; 
+}
+
+.simInfo {
+  color: #333E52;
+}
+
+.simInfo h2 {
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.simInfo h3 {
+  font-size: 1em;
+}
+
+
 /* ==========================================================================
-            Checkout Page
+            Cart Page
    ========================================================================== */
 
+.itemCart {
+  float: left;
+  width: 48%;
+  margin: 50px 5% 50px 0;
+  padding-bottom: 50px;
+}
 
+.summary {
+  float: left;
+  width: 38%;
+  margin: 138px 0 100px 5%;
+  background: rgba(101, 174, 116, .4);
+}
 
+.itemCart h1, .itemCart h2 {
+  display: inline-block;
+  padding-right: 10px;
+}
 
+.itemCart ul {
+  padding-left: 0;
+}
+
+.itemCart li {
+  padding: 1px;
+  margin: 5px 0;
+}
+
+.itemCart li:hover {
+  box-shadow: .5px .5px 1px 1px rgba(51, 62, 82, .5);
+  padding: -1px -1px 99px -1px;
+}
+
+.itemCart li:nth-child(odd) {
+  background: rgba(51, 62, 82, .15);
+}
+
+.itemCart img {
+  width: 150px;
+  margin: 0 5px;
+  float: left;
+}
+
+.infoCart {
+  float: left;
+  margin: 0 0 5px 5px;
+}
+
+.infoCart h3 {
+  padding: 10px 0;
+}
+
+.infoCart p {
+  padding: 5px;
+}
+
+.priceRed {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  color: red;
+}
+
+.itemCart button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+}
+
+.summary h2 {
+  padding: 10px 0 0 15px;
+}
+
+.sumBox {
+  width: 90%;
+  margin: 10px auto;
+  border-bottom: 1px solid rgba(101, 174, 116, .3);
+  padding: 10px 0;
+}
+
+.sumBox:last-child {
+  border: none;
+}
+
+.sumBox h3 {
+  float: left;
+}
+
+.sumBox a {
+  float: left;
+  font-size: .8em;
+  color: #333E52;
+  margin: 8px 0 0 10px;
+}
+
+.sumBox p {
+  float: right;
+}
+
+.sumBox button {
+  width: 100%;
+  background: #333E52;
+  padding: 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  transition: .3s ease-in-out;
+}
+
+.sumBox button:hover {
+  color: #65AE74;
+}
+
+.rec {
+  padding: 20px 0 20px 50px;
+  color: #fff;
+}
 
 /* ==========================================================================
             Divs with Backgrounds
@@ -1392,6 +1652,15 @@ nav ul li a:hover {
   .sResults {
     width: 23%;
   }
+
+  .largeSim {
+    display: none;
+  }
+
+  .similar {
+    display: block;
+  }
+
 }
 
 /* ==========================================================================
@@ -1424,12 +1693,21 @@ nav ul li a:hover {
     display: block;
   }
 
+  .items {
+    width: 30%;
+    margin: 0 1% 80px;
+  }
+
+  .lose {
+    display: none;
+  }
+
   .more {
     display: block;
   }
 
   .description p {
-    height: 143px;
+    height: 60px;
     overflow: hidden;
     transition: all .5s ease-in-out;
   }
@@ -1438,6 +1716,48 @@ nav ul li a:hover {
     width: 20%;
   }
 
+}
+
+
+/* ==========================================================================
+            Media - 1080
+   ========================================================================== */
+@media screen and (max-width: 1080px) {
+  .productSingle {
+    width: 100%;
+  }
+
+  .textBox {
+    width: 80%;
+    margin: 50px 10%;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .top {
+    
+  }
+
+  .middle {
+    height: 400px;
+    display: block;
+    margin: 0 10%;
+    width: 80%;
+  }
+
+  .bottom {
+    
+  }
+
+  .largeItem img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 350px;
+    margin: 15px 0 0 -175px;
+  }
 }
 
 
@@ -1469,11 +1789,11 @@ nav ul li a:hover {
     transform: scale(1);
   }
 
-  .items {
+  .items, .simItems {
     width: 45%;
   }
 
-  .lose {
+  .lose2 {
     display: none;
   }
 
@@ -1483,6 +1803,37 @@ nav ul li a:hover {
 
   .remove2 {
     display: none;
+  }
+
+  .itemCart {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .summary h2 {
+    text-align: center;
+  }
+
+  .summary {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .topMarg {
+    margin-top: 50px;
+  }
+
+  .rec {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .largeItem {
+    width: 100%;
   }
 
 
@@ -1543,14 +1894,13 @@ nav ul li a:hover {
 
 
 /* ==========================================================================
-            Media - 760
+            Media - 768
    ========================================================================== */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .hero {
     background: url(../img/hero2.jpg) no-repeat center;
     background-size: cover;
-  }
-
+    }
 
   .sResults {
     width: 48%;
@@ -1559,6 +1909,8 @@ nav ul li a:hover {
   .remove {
     display: none;
   }
+
+
 
 
 }
@@ -1631,6 +1983,15 @@ nav ul li a:hover {
     z-index: 9999;
   }
 
+  .re {
+    padding: 0;
+    text-align: center;
+  }
+
+  .info, .simInfo {
+    margin-left: -50%; 
+  }
+
   .wrap {
     width: 100%;
   }
@@ -1645,7 +2006,7 @@ nav ul li a:hover {
   }
 
   .departTitle h1 {
-    margin: 0;
+    padding: 0 10px 0 0;
   }
 
   .departTitle h2 {
@@ -1670,10 +2031,39 @@ nav ul li a:hover {
             Media - 550
    ========================================================================== */
 @media screen and (max-width: 550px) {
+  .items, .simItems {
+    width: 100%;
+    margin: 0 0 80px;
+  }
+
   .sResults {
     width: 100%;
     border-top: 1px solid #333E52;
     padding-top: 10px;
+  }
+
+  .infoCart {
+    height: 120px;
+    width: 80%;
+  }
+
+  .itemCart button {
+    display: none;
+  }
+
+  .itemCart img {
+    margin-top: 10px;
+    width: 15%;
+  }
+
+  .infoCart p {
+    float: left;
+    margin: 0;
+  }
+
+  .thumbnails img {
+    width: 22%;
+    margin: 0 1%;
   }
 
 }

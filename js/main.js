@@ -15,15 +15,23 @@ function closeMenu() {
 	document.querySelector(".hamClose").style.display = "none";
 	document.querySelector(".hamburger").style.display = "block";
 	document.querySelector('.filterScreen').style.width = 0;
+	document.querySelector('.filterScreen').style.paddingLeft = "0";
 	document.querySelector(".hamClose h1").style.color = "#fff";
 }
 
 // Filter screen 
 function filter() {
 	document.querySelector('.filterScreen').style.width = "100%";
+	document.querySelector('.filterScreen').style.paddingLeft = "20px";
 	document.querySelector(".hamClose").style.display = "block";
 	document.querySelector(".hamClose h1").style.color = "#000";
 }
+
+
+
+
+	
+
 
 // Dropdown function for department section to reveal large menu on hover
 $(function() {
@@ -66,13 +74,17 @@ $(function() {
 		});
 	});
 
-	// reveal categories within department dropdown
-	 
 
 	// Accordions
-	$( "#accordion, #accordion2, #accordion3" ).accordion({
-	      heightStyle: "content"
-	    });
+	$( "#accordion2, #accordion3, #accordion4" ).accordion({
+	    heightStyle: "content"
+	 });
+	$( "#accordion, #accordion4, #accordion5" ).accordion({
+		collapsible: true,
+		active: false,
+	    heightStyle: "content"
+	 });
+
 
 	// Gallery for Product Page
 	$(".thumbnails img").on("click", function() {
@@ -105,7 +117,7 @@ $(function() {
 	// click on less to show less details of product
 	$(".less").on("click", function() {
 		$(".description p").css({
-			height: "143px"
+			height: "60px"
 		});
 		$(".less").css({
 			display: "none"
@@ -114,6 +126,30 @@ $(function() {
 			display: "block"
 		});
 	});
+
+	//reveal categories within department dropdown
+	
+
+	$(".leftSide li").on("mouseover", function() {
+		$('.leftSide .under').css({
+			width: 0
+		});
+		$(this).children('.under').css({
+			width: ($(this).children('a').width() + 'px')
+		});
+	});
+
+	$(".rightSide li").on("mouseover", function() {
+		$('.rightSide .under').css({
+			width: 0
+		});
+		$(this).children('.under').css({
+			width: ($(this).children('a').width() + 'px')
+		});
+	});
+
+
+
 
 
 });

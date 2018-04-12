@@ -21,14 +21,14 @@
         <div class="full blue navigation">
             <div class="relative">
                 <!-- Navigation on Full Size Browser -> Media 980 -->
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logo.svg" alt="logo">
                 <nav class="fullNav clearFix">
                     <ul class="drop">
                         <li>Departments<i class="fa fa-sort-down downArrow"></i><i class="fa fa-sort-up upArrow"></i></li>
                     </ul>
 
                     <ul>
-                        <li><a href="#">Cart<i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="cart.html">Cart<i class="fa fa-shopping-cart"></i></a></li>
                         <li><a href="#">Account<i class="fa fa-user-circle"></i></a></li>
                     </ul>
                 </nav>
@@ -44,71 +44,64 @@
                 <div class="dropdown relative clearFix">
                     <div class="leftSide">
                         <ul class="menu">
-                            <!-- <script>
-                                function reveal(target) {
-                                    $(".rightSide ul").addClass("categories");
-                                    target.stopPropagation();
-                                    $(target).removeClass("categories");
-                                };
-                            </script> -->
-                            <li><a href="#" onmouseover="reveal('#tShirts')" >T-Shirts</a></li>
-                            <li><a href="#" onmouseover="reveal('#hoodies')" >Hoodies</a></li>
-                            <li><a href="#" onmouseover="reveal('#pants')">Pants</a></li>
-                            <li><a href="#" onmouseover="reveal('#sweats')" >Sweats</a></li>
-                            <li><a href="#" onmouseover="reveal('#headgear')" >Headgear</a></li>
-                            <li><a href="#" onmouseover="reveal('#socks')">Socks</a></li>
-                            <li><a href="#" onmouseover="reveal('#shoes')">Shoes</a></li>
+                            <li><a href="#" onmouseover="show('#tShirts')">T-Shirts</a><div class="under"></div></li>
+                            <li><a href="#" onmouseover="show('#hoodies')">Hoodies</a><div class="under"></div></li>
+                            <li><a href="#" onmouseover="show('#pants')">Pants</a><div class="under"></div></li>
+                            <li><a href="#" onmouseover="show('#sweats')">Sweats</a><div class="under"></div></li>
+                            <li><a href="#" onmouseover="show('#headgear')">Headgear</a><div class="under"></div></li>
+                            <li><a href="#" onmouseover="show('#socks')">Socks</a><div class="under"></div></li>
+                            <li><a href="#" onmouseover="show('#shoes')">Shoes</a><div class="under"></div></li>
                         </ul>
                     </div>
 
                     <div class="rightSide">
-                        <div id="tShirts">
+                        <div id="tShirts" class="cats">
                             <ul class="menList">
                                 <li><h3>Men's</h3></li>
-                                <li><a href="#">Compession</a></li>
-                                <li><a href="#">Jerseys</a></li>
-                                <li><a href="#">Long Sleeves</a></li>
-                                <li><a href="#">Sleeveless</a></li>
-                                <li><a href="#">Tanks</a></li>
-                                <li><a href="#">Polos</a></li>
-                                <li><a href="#">Graphic</a></li>
-                                <li><a href="#">Casual</a></li>
-                                <li><a href="#">Thermal</a></li>
+                                <li><a href="#">Compession</a><div class="under"></div></li>
+                                <li><a href="#">Jerseys</a><div class="under"></div></li>
+                                <li><a href="#">Long Sleeves</a><div class="under"></div></li>
+                                <li><a href="#">Sleeveless</a><div class="under"></div></li>
+                                <li><a href="#">Tanks</a><div class="under"></div></li>
+                                <li><a href="#">Polos</a><div class="under"></div></li>
+                                <li><a href="#">Graphic</a><div class="under"></div></li>
+                                <li><a href="#">Casual</a><div class="under"></div></li>
+                                <li><a href="#">Thermal</a><div class="under"></div></li>
                             </ul>
                             <ul class="womenList">
                                 <li><h3>Women's</h3></li>
-                                <li><a href="#">Compession</a></li>
-                                <li><a href="#">Sports Bra</a></li>
-                                <li><a href="#">Long Sleeves</a></li>
-                                <li><a href="#">Sleeveless</a></li>
-                                <li><a href="#">Tanks</a></li>
-                                <li><a href="#">Polos</a></li>
-                                <li><a href="#">Casual</a></li>
-                                <li><a href="#">Thermal</a></li>
+                                <li><a href="#">Compession</a><div class="under"></div></li>
+                                <li><a href="#">Sports Bra</a><div class="under"></div></li>
+                                <li><a href="#">Long Sleeves</a><div class="under"></div></li>
+                                <li><a href="#">Sleeveless</a><div class="under"></div></li>
+                                <li><a href="#">Tanks</a><div class="under"></div></li>
+                                <li><a href="#">Polos</a><div class="under"></div></li>
+                                <li><a href="#">Casual</a><div class="under"></div></li>
+                                <li><a href="#">Thermal</a><div class="under"></div></li>
                             </ul>
                             <ul class="kidsList">
                                 <li><h3>Kid's</h3></li>
-                                <li><a href="#">Jerseys</a></li>
-                                <li><a href="#">Long Sleeves</a></li>
-                                <li><a href="#">Sleeveless</a></li>
-                                <li><a href="#">Tanks</a></li>
-                                <li><a href="#">Polos</a></li>
-                                <li><a href="#">Graphic</a></li>
-                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Jerseys</a><div class="under"></div></li>
+                                <li><a href="#">Long Sleeves</a><div class="under"></div></li>
+                                <li><a href="#">Sleeveless</a><div class="under"></div></li>
+                                <li><a href="#">Tanks</a><div class="under"></div></li>
+                                <li><a href="#">Polos</a><div class="under"></div></li>
+                                <li><a href="#">Graphic</a><div class="under"></div></li>
+                                <li><a href="#">Casual</a><div class="under"></div></li>
                             </ul>
                             <ul class="seasonalList">
                                 <li><h3>Seasonal</h3></li>
-                                <li><a href="#">Summer</a></li>
-                                <li><a href="#">Autumn</a></li>
-                                <li><a href="#">Winter</a></li>
-                                <li><a href="#">Spring</a></li>
-                                <li><a href="#">Hot</a></li>
-                                <li><a href="#">Cold</a></li>
-                                <li><a href="#">Temperate</a></li>
-                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Summer</a><div class="under"></div></li>
+                                <li><a href="#">Autumn</a><div class="under"></div></li>
+                                <li><a href="#">Winter</a><div class="under"></div></li>
+                                <li><a href="#">Spring</a><div class="under"></div></li>
+                                <li><a href="#">Hot</a><div class="under"></div></li>
+                                <li><a href="#">Cold</a><div class="under"></div></li>
+                                <li><a href="#">Temperate</a><div class="under"></div></li>
+                                <li><a href="#">Casual</a><div class="under"></div></li>
                             </ul>
                         </div>
-                        <div id="hoodies" class="categories">
+                        <div id="hoodies" class="categories cats">
                             <ul class="menList">
                                 <li><h3>Men's</h3></li>
                                 <li><a href="#">Hoodies</a></li>
@@ -150,7 +143,7 @@
                                 <li><a href="#">Thermal</a></li>
                             </ul>
                         </div>
-                        <div id="pants" class="categories">
+                        <div id="pants" class="categories cats">
                             <ul class="menList">
                                 <li><h3>Men's</h3></li>
                                 <li><a href="#">Compession</a></li>
@@ -184,7 +177,7 @@
                                 <li><a href="#">Thermal</a></li>
                             </ul>
                         </div>
-                        <div id="sweats" class="categories">
+                        <div id="sweats" class="categories cats">
                             <ul class="menList">
                                 <li><h3>Men's</h3></li>
                                 <li><a href="#">Sweatshirts</a></li>
@@ -206,7 +199,7 @@
                                 <li><a href="#">Sweatpants</a></li>
                             </ul>
                         </div>
-                        <div id="headgear" class="categories">
+                        <div id="headgear" class="categories cats">
                             <ul class="menList">
                                 <li><h3>Men's</h3></li>
                                 <li><a href="#">Beanies</a></li>
@@ -236,7 +229,7 @@
                                 <li><a href="#">Fun</a></li>
                             </ul>
                         </div>
-                        <div id="socks" class="categories">
+                        <div id="socks" class="categories cats">
                             <ul class="menList">
                                 <li><h3>Men's</h3></li>
                                 <li><a href="#">Compession</a></li>
@@ -262,7 +255,7 @@
                                 <li><a href="#">Thermal</a></li>
                             </ul>
                         </div>
-                        <div id="shoes" class="categories">
+                        <div id="shoes" class="categories cats">
                             <ul class="menList">
                                 <li><h3>Men's</h3></li>
                                 <li><a href="#">Lifestyle</a></li>
@@ -321,15 +314,63 @@
 
                     <!-- Small Screen Menu -->
                     <div class="hamMenu">
-                        <ul>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="#">Cart</a></li>
-                            <hr>
-                            <li><a href="#">Men's</a></li>
-                            <li><a href="#">Women's</a></li>
-                            <li><a href="#">Kid's</a></li>
-                            <li><a href="#">Seasonal</a></li>
-                        </ul>
+                        <div class="acct">
+                            <a href="#">Account</a>
+                            <a href="cart.html">Cart</a>
+                        </div>
+                        <div id="accordion5">
+                            <h3>Men's</h3>
+                            <div>
+                                <ul>
+                                    <li>T-Shirts</li>
+                                    <li>Hoodies</li>
+                                    <li>Pants</li>
+                                    <li>Sweats</li>
+                                    <li>Headgear</li>
+                                    <li>Socks</li>
+                                    <li>Shoes</li>
+                                </ul>
+                            </div>
+
+                            <h3>Women's</h3>
+                            <div>
+                                <ul>
+                                    <li>T-Shirts</li>
+                                    <li>Hoodies</li>
+                                    <li>Pants</li>
+                                    <li>Sweats</li>
+                                    <li>Headgear</li>
+                                    <li>Socks</li>
+                                    <li>Shoes</li>
+                                </ul>
+                            </div>
+
+                            <h3>Kid's</h3>
+                            <div>
+                                <ul>
+                                    <li>T-Shirts</li>
+                                    <li>Hoodies</li>
+                                    <li>Pants</li>
+                                    <li>Sweats</li>
+                                    <li>Headgear</li>
+                                    <li>Socks</li>
+                                    <li>Shoes</li>
+                                </ul>
+                            </div>
+
+                            <h3>Seasonal</h3>
+                            <div>
+                                <ul>
+                                    <li>T-Shirts</li>
+                                    <li>Hoodies</li>
+                                    <li>Pants</li>
+                                    <li>Sweats</li>
+                                    <li>Headgear</li>
+                                    <li>Socks</li>
+                                    <li>Shoes</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -350,7 +391,6 @@
                             <h1>Work Out Attire</h1>
                         </fieldset>
                         <a href="results.html">Shop Now</a>
-                        </fieldset>
                     </div>
                 </div>
                 <div class="bottomAd">
@@ -373,11 +413,10 @@
 
         <!-- Recently Viewed -->
         <div class="full re clearFix">
-            <div class="container">
                 <h2>Recently Viewed</h2>
 
                 <div class="items"><a href="product.html">
-                    <div class="item0 relative three">
+                    <div class="item0 relative four">
                         <div class="info">
                             <h2>Compression Shirt</h2>
                             <div class="stars">
@@ -389,7 +428,19 @@
                 </a></div>
 
                 <div class="items"><a href="#">
-                    <div class="item1 relative three">
+                    <div class="item2 relative four">
+                        <div class="info">
+                            <h2>Men's Skull Cap</h2>
+                            <div class="stars">
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
+                            </div>
+                            <h3>$19.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="items lose2"><a href="#">
+                    <div class="item1 relative four">
                         <div class="info">
                             <h2>Men's Jacket</h2>
                             <div class="stars">
@@ -401,26 +452,7 @@
                 </a></div>
 
                 <div class="items lose"><a href="#">
-                    <div class="item2 relative three">
-                        <div class="info">
-                            <h2>Men's Skull Cap</h2>
-                            <div class="stars">
-                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
-                            </div>
-                            <h3>$19.99</h3>
-                        </div>
-                    </div>
-                </a></div>
-            </div>
-        </div>
-
-        <!-- Recommendations -->
-        <div class="full re clearFix">
-            <div class="container">
-                <h2>Recommendations</h2>
-
-                <div class="items"><a href="#">
-                    <div class="item3 relative three">
+                    <div class="item3 relative four">
                         <div class="info">
                             <h2>Men's Shorts</h2>
                             <div class="stars">
@@ -430,9 +462,26 @@
                         </div>
                     </div>
                 </a></div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="full re clearFix">
+                <h2>Recommendations</h2>
 
                 <div class="items"><a href="#">
-                    <div class="item4 relative three">
+                    <div class="item6 relative four">
+                        <div class="info">
+                            <h2>Men's Skull Cap</h2>
+                            <div class="stars">
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
+                            </div>
+                            <h3>$19.99</h3>
+                        </div>
+                    </div>
+                </a></div>
+
+                <div class="items"><a href="#">
+                    <div class="item4 relative four">
                         <div class="info">
                             <h2>Adidas Men's Shoe</h2>
                             <div class="stars">
@@ -443,8 +492,8 @@
                     </div>
                 </a></div>
 
-                <div class="items lose"><a href="#">
-                    <div class="item5 relative three">
+                <div class="items lose2"><a href="#">
+                    <div class="item5 relative four">
                         <div class="info">
                             <h2>Compression Pants</h2>
                             <div class="stars">
@@ -454,18 +503,28 @@
                         </div>
                     </div>
                 </a></div>
-            </div>
+
+                <div class="items lose"><a href="#">
+                    <div class="item7 relative four">
+                        <div class="info">
+                            <h2>Compression Pants</h2>
+                            <div class="stars">
+                                <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
+                            </div>
+                            <h3>$39.99</h3>
+                        </div>
+                    </div>
+                </a></div>
         </div>
 
         <div class="full summer relative clearFix">
             <div class="container relative">
-                <img src="img/ball.png">
+                <img src="img/ball.png" alt="beach ball floating on water">
                 <fieldset>
                     <legend>Summer Pool Party</legend>
                     <h1>BLOW OUT!!</h1>
                 </fieldset>
                 <a href="#">Shop Now</a>
-                </fieldset>
             </div>
         </div>
 
@@ -536,7 +595,14 @@
         </footer>
 
 
-
+        <script>
+            function show() {
+                $(function(target) {
+                    $(target).siblings('.cats').addClass("categories");
+                    $(this).removeClass("categories");
+                })
+            };
+        </script>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

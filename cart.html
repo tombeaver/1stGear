@@ -28,7 +28,7 @@
                     </ul>
 
                     <ul>
-                        <li><a href="cart.html">Cart<i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="#">Cart<i class="fa fa-shopping-cart"></i></a></li>
                         <li><a href="#">Account<i class="fa fa-user-circle"></i></a></li>
                     </ul>
                 </nav>
@@ -377,106 +377,87 @@
         </div>
         <div class="blue space"></div>
 
-        <!-- Hero -->
-        <div class="full productSingle relative clearFix">
-            <div class="gallery relative">
-                <div class="largeItem">
-                    <img src="img/product/blue.jpg" alt="compression shirt for men blue color">
+        <!-- Cart -->
+        <div class="container clearFix">
+            <div class="itemCart">
+                <div class="center">
+                    <h1>My Cart </h1><h2> (4 items)</h2>
                 </div>
+                <ul>
+                    <li class="relative clearFix">
+                        <img src="img/item/item0.jpg" alt="items in the shopping cart">
+                        <div class="infoCart">
+                            <h3>Mens Compression Shirt</h3>
+                            <p><b>Size: </b>M</p>
+                            <p class="clearFix"><b>Color: </b>Blue</p><br>
+                            <p class="full"><b>Qty: </b>1</p>
+                        </div>
+                        <p class="priceRed">$34.99</p>
+                        <button onclick="remove()"><i class="fa fa-times"></i></button>
+                    </li>
+                    <li class="relative clearFix">
+                        <img src="img/item/item2.jpg" alt="items in the shopping cart">
+                        <div class="infoCart">
+                            <h3>Mens Compression Shirt</h3>
+                            <p><b>Size: </b>M</p>
+                            <p class="clearFix"><b>Color: </b>Blue</p><br>
+                            <p class="full"><b>Qty: </b>1</p>
+                        </div>
+                        <p class="priceRed">$19.99</p>
+                        <button onclick="remove()"><i class="fa fa-times"></i></button>
+                    </li>
+                    <li class="relative clearFix">
+                        <img src="img/item/item3.jpg" alt="items in the shopping cart">
+                        <div class="infoCart">
+                            <h3>Mens Compression Shirt</h3>
+                            <p><b>Size: </b>M</p>
+                            <p class="clearFix"><b>Color: </b>Black</p><br>
+                            <p class="full"><b>Qty: </b>1</p>
+                        </div>
+                        <p class="priceRed">$24.99</p>
+                        <button onclick="remove()"><i class="fa fa-times"></i></button>
+                    </li>
+                    <li class="relative clearFix">
+                        <img src="img/item/item4.jpg" alt="items in the shopping cart">
+                        <div class="infoCart">
+                            <h3>Mens Compression Shirt</h3>
+                            <p><b>Size: </b>9</p>
+                            <p class="clearFix"><b>Color: </b>Black</p><br>
+                            <p class="full"><b>Qty: </b>1</p>
+                        </div>
+                        <p class="priceRed">$79.99</p>
+                        <button onclick="remove()"><i class="fa fa-times"></i></button>
+                    </li>
+                </ul>
             </div>
-            <div class="textBox relative">
-                <div class="right">
-                    <div class="top">
-                        <h2>Men's Compression Shirt</h2>
-                        <p>$34.99</p>
-                    </div>
-                    <div class="middle relative">
-                        <div class="largeItem">
-                            <img src="img/product/blue.jpg" alt="compression shirt for men blue color">
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="sizeChart">
-                            <div class="box">XS</div>
-                            <div class="box">S</div>
-                            <div class="box">M</div>
-                            <div class="box">L</div>
-                            <div class="box">XL</div>
-                            <div class="box">XXL</div>
-                        </div>
-                        <div class="thumbnails">
-                            <img src="img/product/blue.jpg" alt="compression shirt for men blue color">
-                            <img src="img/product/green.jpg" alt="compression shirt for men green color"> 
-                            <img src="img/product/yellow.jpg" alt="compression shirt for men yellow color"> 
-                            <img src="img/product/red.jpg" alt="compression shirt for men red color"> 
-                        </div>
+            <div class="summary">
+                <h2>Summary</h2>
+                <div class="sumBox clearFix"><h3>Subtotal</h3><p>$159.96</p></div>
+                <div class="sumBox clearFix"><h3>Est. Shipping Cost</h3><a href="#">change</a><p class="balance">$0.00</p></div>
+                <div class="sumBox clearFix"><h3>Est. Taxes</h3><a href="#">?</a><p>- -</p></div>
+                <div class="sumBox clearFix"><h3><b>Total</b></h3><p class="balance">$159.96</p></div>
+                <div class="sumBox clearFix"><button>Checkout</button></div>
 
-                        <div class="addCart" onclick="addCart()">
-                            <button>Add to Cart</button>
-                        </div>
-
-                        <div class="description">
-                            <h2>Description</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel eros ac mi ornare dictum vel vel purus. In eget libero id nulla placerat consectetur. Praesent ante dui, auctor non rutrum id, efficitur sed urna. Phasellus molestie consectetur elementum. Vestibulum eget volutpat mauris. Fusce id massa vitae erat vehicula fermentum sit amet sed sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc interdum lectus quis ipsum accumsan, in tincidunt dui efficitur. Sed suscipit lacinia orci vel eleifend.</p>
-                            <a class="more">More</a>
-                            <a class="less">Less</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="largeSim clearFix">
-                    <h2>Similar Items</h2>
-
-                    <div class="simItems"><a href="#">
-                        <div class="item6 relative">
-                            <div class="simInfo">
-                                <h2>Men's Skull Cap</h2>
-                                <div class="stars">
-                                    <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
-                                </div>
-                                <h3>$19.99</h3>
-                            </div>
-                        </div>
-                    </a></div>
-
-                    <div class="simItems"><a href="#">
-                        <div class="item4 relative">
-                            <div class="simInfo">
-                                <h2>Adidas Men's Shoe</h2>
-                                <div class="stars">
-                                    <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
-                                </div>
-                                <h3>$79.99</h3>
-                            </div>
-                        </div>
-                    </a></div>
-
-                    <div class="simItems"><a href="#">
-                        <div class="item5 relative">
-                            <div class="simInfo">
-                                <h2>Compression Pants</h2>
-                                <div class="stars">
-                                    <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
-                                </div>
-                                <h3>$39.99</h3>
-                            </div>
-                        </div>
-                    </a></div>
-                </div>
             </div>
         </div>
 
-        <div class="full similar clearFix">
-                <h2>Similar Items</h2>
+        <div class="full blue topMarg">
+            <div class="rec">
+                <h2>Recommendations</h2>    
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="full re clearFix">
 
                 <div class="items"><a href="#">
-                    <div class="item6 relative four">
+                    <div class="item3 relative four">
                         <div class="info">
-                            <h2>Men's Skull Cap</h2>
+                            <h2>Men's Shorts</h2>
                             <div class="stars">
                                 <h2><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></h2>
                             </div>
-                            <h3>$19.99</h3>
+                            <h3>$24.99</h3>
                         </div>
                     </div>
                 </a></div>
@@ -493,7 +474,7 @@
                     </div>
                 </a></div>
 
-                <div class="items lose2"><a href="#">
+                <div class="items lose"><a href="#">
                     <div class="item5 relative four">
                         <div class="info">
                             <h2>Compression Pants</h2>
@@ -517,14 +498,13 @@
                     </div>
                 </a></div>
         </div>
-
-
-
-
-
-
-
         
+
+
+
+
+
+
 
         <!-- Footer -->
         <footer class="full">
@@ -581,8 +561,6 @@
             </div>
 
         </footer>
-
-        
 
 
 
