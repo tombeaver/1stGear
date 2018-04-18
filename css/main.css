@@ -168,7 +168,7 @@ textarea {
   top: 0;
   left: 0;
   height: 75px;
-  z-index: 9999;
+  z-index: 999999999;
 }
 
 .navigation img {
@@ -287,7 +287,7 @@ nav ul li a:hover {
       .hamburger {
         position: absolute;
         top: 0;
-        right: 20px;
+        right: 10px;
         width: 50px;
         cursor: pointer;
       }
@@ -303,6 +303,8 @@ nav ul li a:hover {
       }
 
       .hamNav h1 {
+        text-align: center;
+        width: 100%;
         color: #fff;
         font-size: 1.5em;
       }
@@ -311,7 +313,7 @@ nav ul li a:hover {
         position: absolute;
         top: -60px;
         left: 0;
-        overflow: hidden;
+        overflow: scroll;
         height: 0;
         width: 100%;
         background: #333E52;
@@ -327,14 +329,19 @@ nav ul li a:hover {
         display: block;
       }
 
+      #accordion5 ul li a {
+        font-size: 1em;
+      }
+
       .acct {
-        margin-top: 50px;
+        margin: 50px 0 30px;
         border-bottom: 2px solid #65AE74;
       }
 
       #accordion5 {
         color: #fff;
         background: #333E52;
+        z-index: 99;
       }
 
       #accordion5 .ui-widget-content {
@@ -354,7 +361,7 @@ nav ul li a:hover {
         color: #65AE74;
       }
 
-      .ui-state-focus span{
+      #accordion5 span{
         display: none;
       }
 
@@ -390,9 +397,16 @@ nav ul li a:hover {
         margin: 30px 0;
       }
 
-      .hamMenu h3 {
+      #accordion5 h3 {
         width: 100%;
+        height: 50px;
+        margin-top: 10px;
       }
+
+      .ui-accordion .ui-accordion-header .ui-icon {
+        margin-top: 10px;
+      }
+
 
 
 /* Dropdown */
@@ -401,6 +415,7 @@ nav ul li a:hover {
   margin-top: 75px;
   height: 0;
   background: #fff;
+  box-shadow: 2px 2px 1px #f2f2f2;
   transition: all .5s ease-in-out;
 }
 
@@ -1011,6 +1026,13 @@ nav ul li a:hover {
           transition: all .5s ease-in-out;
         }
 
+        .filterContent {
+          padding-left: 12%;
+          height: 100vh;
+          padding-bottom: -150px;
+          overflow: scroll;
+        }
+
         .filterScreen h2:first-child {
           margin-top: 75px;
         }
@@ -1030,6 +1052,48 @@ nav ul li a:hover {
 
         .filterScreen ul li {
           padding: 5px 0;
+        }
+
+        .filterButtons {
+          background: #fff;
+        }
+
+        .filterB {
+          width: 80%;
+        }
+
+        .filterB button {
+          width: 100%;
+          margin: 30px 0 0 -10px;
+          padding: 5px 0;
+          border: none;
+          display: inline;
+          background: #c1c5cb;
+          transition: .3s ease-in-out;
+        }
+
+        .filterB button:hover {
+          background: #c1dec7;
+        }
+
+        .onleft {
+          background: #d6d8dc;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50%;
+          text-align: center;
+          padding: 20px 0;
+        }
+
+        .onright {
+          background: #d6d8dc;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 50%;
+          text-align: center;
+          padding: 20px 0;
         }
 
 
@@ -1144,7 +1208,7 @@ nav ul li a:hover {
   text-align: right;
 }
 
-.addCart button {
+.addCart a {
   display: block;
   color: #fff;
   background: #65AE74;
@@ -1157,19 +1221,14 @@ nav ul li a:hover {
   transition: .3s ease-in-out;
 }
 
-.addCart button:hover {
+
+.addCart a:hover {
   color: #333E52;
 }
 
 .similar {
-  display: none;
   width: 80%;
-  margin: 50px 10%;
-}
-
-
-.largeSim {
-  
+  margin: 0 10% 50px;
 }
 
 .simItems {
@@ -1736,27 +1795,25 @@ nav ul li a:hover {
     display: none;
   }
 
-  .top {
-    
-  }
-
   .middle {
-    height: 400px;
+    height: 0;
+    padding-top: 80%;
     display: block;
     margin: 0 10%;
     width: 80%;
   }
 
-  .bottom {
-    
+  .sizeChart {
+    padding-top: 5px;
+    text-align: center;
   }
 
   .largeItem img {
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 350px;
-    margin: 15px 0 0 -175px;
+    left: 0;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -1883,6 +1940,7 @@ nav ul li a:hover {
 
   .miniFilter {
     display: block;
+    margin-top: -10px;
   }
 
   .remove {
@@ -1904,10 +1962,15 @@ nav ul li a:hover {
 
   .sResults {
     width: 48%;
+    text-align: center;
   }
 
   .remove {
     display: none;
+  }
+
+  .pagination ul {
+    text-align: center;
   }
 
 
@@ -2014,14 +2077,18 @@ nav ul li a:hover {
   }
 
   .departTitle b {
-  }
 
+  }
   .departTitle p {
     display: none;
   }
 
   .results {
     margin-top: -20px;
+  }
+
+  .miniFilter h2 {
+    margin-top: -45px;
   }
 
 
@@ -2062,8 +2129,16 @@ nav ul li a:hover {
   }
 
   .thumbnails img {
-    width: 22%;
+    width: 21%;
     margin: 0 1%;
+  }
+
+  .box {
+    width: 38px;
+  }
+
+  .simItems:first-child {
+
   }
 
 }
@@ -2124,6 +2199,14 @@ nav ul li a:hover {
   .bottomAd h2 {
     font-size: 1.5em;
   }
+  .largeItem img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+
 
   
 }

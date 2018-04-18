@@ -17,6 +17,7 @@ function closeMenu() {
 	document.querySelector('.filterScreen').style.width = 0;
 	document.querySelector('.filterScreen').style.paddingLeft = "0";
 	document.querySelector(".hamClose h1").style.color = "#fff";
+	document.querySelector(".navigation img").style.display = "block";
 }
 
 // Filter screen 
@@ -25,6 +26,7 @@ function filter() {
 	document.querySelector('.filterScreen').style.paddingLeft = "20px";
 	document.querySelector(".hamClose").style.display = "block";
 	document.querySelector(".hamClose h1").style.color = "#000";
+	document.querySelector(".navigation img").style.display = "none";
 }
 
 
@@ -76,10 +78,11 @@ $(function() {
 
 
 	// Accordions
-	$( "#accordion2, #accordion3, #accordion4" ).accordion({
-	    heightStyle: "content"
+	$( "#accordion2, #accordion4" ).accordion({
+	    heightStyle: "content",
+	    collapsible: true
 	 });
-	$( "#accordion, #accordion4, #accordion5" ).accordion({
+	$( "#accordion, #accordion4, #accordion5, #accordion3" ).accordion({
 		collapsible: true,
 		active: false,
 	    heightStyle: "content"

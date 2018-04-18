@@ -44,7 +44,7 @@
                 <div class="dropdown relative clearFix">
                     <div class="leftSide">
                         <ul class="menu">
-                            <li><a href="#" onmouseover="show('#tShirts')">T-Shirts</a><div class="under"></div></li>
+                            <li><a href="results.html" onmouseover="show('#tShirts')">T-Shirts</a><div class="under"></div></li>
                             <li><a href="#" onmouseover="show('#hoodies')">Hoodies</a><div class="under"></div></li>
                             <li><a href="#" onmouseover="show('#pants')">Pants</a><div class="under"></div></li>
                             <li><a href="#" onmouseover="show('#sweats')">Sweats</a><div class="under"></div></li>
@@ -300,9 +300,6 @@
 
                 <!-- Navigation for Small Screen Browsers -> 980 and smaller -->
                 <div class="hamNav">
-                    <div class="smallSearch">
-                        <h1><i class="fa fa-search smallSearch"></i></h1>
-                    </div>
 
                     <div class="hamburger" onclick="openMenu()">
                         <h1><i class="fa fa-bars"></i></h1>
@@ -314,126 +311,131 @@
 
                     <!-- Filter Screen -->
                     <div class="filterScreen fixed">
-                        <h2>Categories</h2>
-                        <div id="accordion">
-                            
-                            <h3>T-Shirts</h3>
-                            <div>
-                                <ul>
-                                    <li>Compression</li>
-                                    <li>Jerseys</li>
-                                    <li>Long Sleeves</li>
-                                    <li>Sleeveless &amp; Tanks</li>
-                                    <li>Polos</li>
-                                    <li>Graphic</li>
-                                </ul>
-                            </div>
+                        <div class="filterContent">
+                            <h2>Categories</h2>
+                            <div id="accordion">
+                                
+                                <h3>T-Shirts</h3>
+                                <div>
+                                    <ul>
+                                        <li>Compression</li>
+                                        <li>Jerseys</li>
+                                        <li>Long Sleeves</li>
+                                        <li>Sleeveless &amp; Tanks</li>
+                                        <li>Polos</li>
+                                        <li>Graphic</li>
+                                    </ul>
+                                </div>
 
-                            <h3>Hoodies</h3>
-                            <div>
-                                <ul>
-                                    <li>Hoodies</li>
-                                    <li>Pullovers</li>
-                                    <li>Sweatshirts</li>
-                                    <li>Jackets</li>
-                                </ul>
-                            </div>
-                            
-                            <h3>Pants</h3>
-                            <div>
-                                <ul>
-                                    <li>Pants</li>
-                                    <li>Compression</li>
-                                    <li>Sweatpants</li>
-                                    <li>Leggings</li>
-                                </ul>
-                            </div>
+                                <h3>Hoodies</h3>
+                                <div>
+                                    <ul>
+                                        <li>Hoodies</li>
+                                        <li>Pullovers</li>
+                                        <li>Sweatshirts</li>
+                                        <li>Jackets</li>
+                                    </ul>
+                                </div>
+                                
+                                <h3>Pants</h3>
+                                <div>
+                                    <ul>
+                                        <li>Pants</li>
+                                        <li>Compression</li>
+                                        <li>Sweatpants</li>
+                                        <li>Leggings</li>
+                                    </ul>
+                                </div>
 
-                            <h3>Sweats</h3>
-                            <div>
-                                <ul>
-                                    <li>Sweatshirts</li>
-                                    <li>Sweatpants</li>
-                                </ul>
-                            </div>
+                                <h3>Sweats</h3>
+                                <div>
+                                    <ul>
+                                        <li>Sweatshirts</li>
+                                        <li>Sweatpants</li>
+                                    </ul>
+                                </div>
 
-                            <h3>Headgear</h3>
-                            <div>
-                                <ul>
-                                    <li>Beanies</li>
-                                    <li>Earmuffs</li>
-                                    <li>Headbands</li>
-                                </ul>
-                            </div>
+                                <h3>Headgear</h3>
+                                <div>
+                                    <ul>
+                                        <li>Beanies</li>
+                                        <li>Earmuffs</li>
+                                        <li>Headbands</li>
+                                    </ul>
+                                </div>
 
-                            <h3>Socks</h3>
-                            <div>
-                                <ul>
-                                    <li>Compression</li>
-                                    <li>Thermal</li>
-                                    <li>Support</li>
-                                </ul>
-                            </div>
+                                <h3>Socks</h3>
+                                <div>
+                                    <ul>
+                                        <li>Compression</li>
+                                        <li>Thermal</li>
+                                        <li>Support</li>
+                                    </ul>
+                                </div>
 
-                            <h3>Shoes</h3>
-                            <div>
-                                <ul>
-                                    <li>Lifestyle</li>
-                                    <li>Training</li>
-                                    <li>Running</li>
-                                    <li>Casual</li>
-                                    <li>Hiking</li>
-                                </ul>
+                                <h3>Shoes</h3>
+                                <div>
+                                    <ul>
+                                        <li>Lifestyle</li>
+                                        <li>Training</li>
+                                        <li>Running</li>
+                                        <li>Casual</li>
+                                        <li>Hiking</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Filters</h2>
+                            <div id="accordion4">
+
+                                <h3>Color</h3>
+                                <div>
+                                    <ul>
+                                        <li><input type="checkbox"> Red</li>
+                                        <li><input type="checkbox"> Yellow</li>
+                                        <li><input type="checkbox"> Blue</li>
+                                        <li><input type="checkbox"> Green</li>
+                                        <li><input type="checkbox"> Brown</li>
+                                        <li><input type="checkbox"> Black</li>
+                                        <li><input type="checkbox"> White</li>
+                                    </ul>
+                                </div>
+
+                                <h3>Size</h3>
+                                <div>
+                                    <ul>
+                                        <li><input type="checkbox"> XS</li>
+                                        <li><input type="checkbox"> S</li>
+                                        <li><input type="checkbox"> M</li>
+                                        <li><input type="checkbox"> L</li>
+                                        <li><input type="checkbox"> XL</li>
+                                        <li><input type="checkbox"> XXL</li>
+                                    </ul>
+                                </div>
+
+                                <h3>Brand</h3>
+                                <div>
+                                    <ul>
+                                        <li><input type="checkbox"> Nike</li>
+                                        <li><input type="checkbox"> Rebok</li>
+                                        <li><input type="checkbox"> Adidas</li>
+                                    </ul>
+                                </div>
+                                
+                                <h3>Sport</h3>
+                                <div>
+                                    <ul>
+                                        <li><input type="checkbox"> Running</li>
+                                        <li><input type="checkbox"> Basketball</li>
+                                        <li><input type="checkbox"> Soccer</li>
+                                        <li><input type="checkbox"> Football</li>
+                                        <li><input type="checkbox"> Gym</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <h2>Filters</h2>
-                        <div id="accordion4">
-
-                            <h3>Color</h3>
-                            <div>
-                                <ul>
-                                    <li><input type="checkbox"> Red</li>
-                                    <li><input type="checkbox"> Yellow</li>
-                                    <li><input type="checkbox"> Blue</li>
-                                    <li><input type="checkbox"> Green</li>
-                                    <li><input type="checkbox"> Brown</li>
-                                    <li><input type="checkbox"> Black</li>
-                                    <li><input type="checkbox"> White</li>
-                                </ul>
-                            </div>
-
-                            <h3>Size</h3>
-                            <div>
-                                <ul>
-                                    <li><input type="checkbox"> XS</li>
-                                    <li><input type="checkbox"> S</li>
-                                    <li><input type="checkbox"> M</li>
-                                    <li><input type="checkbox"> L</li>
-                                    <li><input type="checkbox"> XL</li>
-                                    <li><input type="checkbox"> XXL</li>
-                                </ul>
-                            </div>
-
-                            <h3>Brand</h3>
-                            <div>
-                                <ul>
-                                    <li><input type="checkbox"> Nike</li>
-                                    <li><input type="checkbox"> Rebok</li>
-                                    <li><input type="checkbox"> Adidas</li>
-                                </ul>
-                            </div>
-                            
-                            <h3>Sport</h3>
-                            <div>
-                                <ul>
-                                    <li><input type="checkbox"> Running</li>
-                                    <li><input type="checkbox"> Basketball</li>
-                                    <li><input type="checkbox"> Soccer</li>
-                                    <li><input type="checkbox"> Football</li>
-                                    <li><input type="checkbox"> Gym</li>
-                                </ul>
-                            </div>
-
+                        <div class="filterButtons">
+                            <button class="onleft">Update</button>
+                            <button class="onright">Reset</button>
                         </div>
                     </div>
 
@@ -447,7 +449,7 @@
                             <h3>Men's</h3>
                             <div>
                                 <ul>
-                                    <li>T-Shirts</li>
+                                    <li><a href="results.html">T-Shirts</a></li>
                                     <li>Hoodies</li>
                                     <li>Pants</li>
                                     <li>Sweats</li>
@@ -659,6 +661,11 @@
                         </ul>
                     </div>
 
+                    
+                </div>
+                <div class="filterB">
+                    <button>Update</button>
+                    <button>Reset</button>
                 </div>
             </div>
 
